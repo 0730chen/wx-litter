@@ -15,19 +15,28 @@
     "pages/strategy/strategy"
   ],
   "tabBar": {
+    "color":"#a9b7b7",
+    "selectedColor":"#11cd6e",
+    "borderStyle":"black",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"./images/home1.png",
+        "selectedIconPath":"images/home.png"
       },
       
       {
         "pagePath": "pages/strategy/strategy",
-        "text":"攻略"
+        "text":"装备介绍",
+        "iconPath": "./images/game1.png",
+        "selectedIconPath": "images/game.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "我的"
+        "text": "故事",
+        "iconPath": "./images/book1.png",
+        "selectedIconPath": "images/book.png"
       }
     ]
   },

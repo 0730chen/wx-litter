@@ -1,10 +1,35 @@
 /**index.wxss**/
+#heroname{
+  position: absolute;
+  top: 25%;
+  left: 45%;
+}
+#hero{
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 2px;
+  top: 210px;
+  text-align: center;
+  font-size: 12px;
+}
+#peoplelist{
+  position: absolute;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+}
+.nickname{
+  text-align: center;
+}
 .slide-image{
-  width: 100%;
+  width: 92%;
   height: 200px;
+  margin: 0 auto;
 }
 swiper{
   height: 200px;
+  text-align: center
 }
 /* .lunbo{
   width: 80%;
@@ -15,25 +40,36 @@ swiper{
   height: 50px;
 }
 image{
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 65px;
+}
+.moreImg{
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  top:25%;
 }
 .more{
   position: relative;
-  right: 0;
+  width: 100px;
+  height: 45px;
+  transform: translateX(120px)  
 }
 .hero{
   display: flex;
-  width: 100%;
+  width: 94%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 .heroList{
   width: 30%;
-  height: 100rpx;
+  height: 160rpx;
   font-size: 12px;
   margin: 2px;
+  display: flex;
+  justify-content: center;
  
 }
 page {

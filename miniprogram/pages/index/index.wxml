@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgList}}">
+  <block wx:for="{{imgList}}" wx:key="index">
     <swiper-item>
       <image src="{{item.name}}" class="slide-image" width="355" height="150"/>
     </swiper-item>
@@ -62,13 +62,20 @@
       <text>云调用</text>
     </navigator>
   </view> -->
- <button class="more" bindtap="btnmore">更多</button>
+ <view class="more" bindtap="btnmore">
+  <image  class="moreImg" src="../../images/more.png"></image>
+ </view>
+ <view id="hero">
+  <image id="peoplelist" src="../../images/people.png"></image>
+  <span id="heroname">英雄</span>
+ </view>
+ <view class="line"></view>
   <view class="hero">
   <!-- hero.Hero是一个数组 -->
   
   <view wx:for="{{hero}}" class="heroList" wx:key="item">
   <view class="context"><image src="{{item.imgSrc}}"></image>
-  {{item.cname}}</view>
+  <view class="nickname">{{item.cname}}</view></view>
   
   
   </view>

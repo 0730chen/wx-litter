@@ -1,3 +1,4 @@
+let Stroy = require('../data/stroy.js')
 Page({
   data: {
     imgUrls: [
@@ -8,26 +9,23 @@ Page({
     indicatorDots: false,
     autoplay: false,
     interval: 5000,
-    duration: 1000
+    duration: 1000,
+    StroyList:Stroy
   },
-  changeIndicatorDots: function (e) {
+  btnUrl(e){
+    console.log(e)
+    var $id = e.currentTarget.dataset.id
+    console.log(this.data.StroyList)
+    for(let i in this.data.StroyList){
+      console.log(this.data.StroyList[i]['newImg'])
+    }
+  },
+  onUnload(){
     this.setData({
-      indicatorDots: !this.data.indicatorDots
+      StroyList: Stroy
     })
   },
-  changeAutoplay: function (e) {
-    this.setData({
-      autoplay: !this.data.autoplay
-    })
-  },
-  intervalChange: function (e) {
-    this.setData({
-      interval: e.detail.value
-    })
-  },
-  durationChange: function (e) {
-    this.setData({
-      duration: e.detail.value
-    })
-  }
+  onShow(){},
+  onLoad(){},
+
 })

@@ -15,14 +15,19 @@ Page({
     hero:[],
     mark:0,
     key:0,
-    indicatorDots: false,
-    autoplay: false,
+    indicatorDots: true,
+    autoplay: true,
     interval: 5000,
     duration: 1000,
     imgList:[
       { name:'https://itea-cdn.qq.com/file/tgl/20190304/10710365.1551689575.1787c0951bbbb1f3da19c1192a39a0c6.710x365_152992.jpg'},
       {
         name:'https://itea-cdn.qq.com/file/tgl/20190228/9710365.1551340777.78648c00e4609dfb87229eb3e30487aa.710x365_138949.jpg'
+      },
+      {
+        name:'https://itea-cdn.qq.com/file/tgl/20181210/710365.1544413993.1800972b93a10867cdf292f20fcb677e.710x365_287340.jpg'
+      },{
+        name:'https://itea-cdn.qq.com/file/tgl/20181210/710x365.1544414207.e7d73f3ed01b9ec3ef3e890f6eb856f9.710x365_216650.jpg'
       }
     ],
     avator:[],
