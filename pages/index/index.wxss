@@ -1,0 +1,30 @@
+/**index.wxss**/
+.container{
+  color: #aaa;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.scan{
+  background: white;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  right: 32px;
+  cursor: pointer;
+  bottom: 64px;
+}

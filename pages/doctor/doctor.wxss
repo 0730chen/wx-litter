@@ -1,0 +1,43 @@
+/* pages/doctor/doctor.wxss */
+.doctor-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+}
+van-search{
+  flex: 1;
+}
+
+.doctor-wrap{
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+}
+.doctor-container{
+  padding-top: 54px;
+  height: 100%;
+  background-color:rgb(241, 243, 244)
+}
+.magnifier{
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.input{
+  border: 1px solid rgb(241, 243, 244);
+  border-radius:8px ;
+  padding: 4px 24px;
+  position: relative;
+}
+.nearby{
+  color: rgb(19, 77, 155);
+  padding-right: 16px;
+}

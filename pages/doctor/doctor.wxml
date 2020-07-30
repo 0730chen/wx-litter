@@ -1,0 +1,29 @@
+<!--pages/doctor/doctor.wxml-->
+<view class="doctor-wrap">
+<view class="doctor-title">
+<van-search
+  value="{{ value }}"
+  input-align="left"
+  placeholder="请输入医生姓名查找"
+  bindtap="inputFocus"
+/>
+<block wx:if="{{focusVisible}}">
+<van-button type="primary" size="small">搜索</van-button>
+</block>
+<block wx:else>
+<view class="nearby" bindtap="onFindDoctor">附近医生</view>
+</block>
+</view>
+<view class="doctor-container">
+<block wx:if="{{attentionDoctor.length>0}}">
+<van-cell-group>
+<van-cell  title="{{doctor.name}}" is-link wx:for="{{attentionDoctor}}" wx:for-item="doctor" wx:key="index">
+</van-cell>
+</van-cell-group>
+</block>
+<block wx:else>
+<van-empty description="暂无关注医生" />
+</block>
+</view>
+<scan-component></scan-component>
+</view>

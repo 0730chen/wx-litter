@@ -1,0 +1,7 @@
+{
+  "desc": "智能医疗社区",
+  "rules": [{
+  "action": "allow",
+  "page": "*"
+  }]
+}

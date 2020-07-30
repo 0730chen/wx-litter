@@ -1,0 +1,2 @@
+<!--components/scan/scan.wxml-->
+ <image src="../../pages/image/scan.png" class="scan" bindtap="onScan"></image>

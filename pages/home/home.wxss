@@ -1,0 +1,76 @@
+/* pages/home/home.wxss */
+.home-wrap{
+  width: 100%;
+  height: 100%;
+  overflow:hidden
+}
+.tabs{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: none;
+}
+.med{
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  background: white;
+}
+.dis{
+  flex: 1;
+  padding: 12px 0;
+  text-align: center;
+  background: white;
+}
+.selected{
+  color: aqua;
+}
+.patient-list{
+  height: 100%;
+  margin-top: 45px;
+  background-color:rgb(241, 243, 244)
+}
+.patient{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.doctor-list{
+  margin-top: 45px;
+  height: 100%;
+  background-color:rgb(241, 243, 244);
+}
+.doctor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hover-button{
+  opacity: 0.9;
+  background: #f7f7f7;
+}
+.right{
+  width: 24px;
+  height: 24px;
+}
+.tabs-container{
+  width: 100%;
+  height: 40px;
+}
+.no-doctor{
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.document{
+  height: 64px;
+  width: 64px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}

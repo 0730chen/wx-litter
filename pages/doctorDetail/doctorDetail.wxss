@@ -1,0 +1,97 @@
+/* pages/doctorDetail/doctorDetail.wxss */
+page{
+  background: white;
+}
+.detail-wrap{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.detail-card{
+  padding: 16px;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: cornflowerblue;
+}
+.positon-message{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.user-name{
+  padding-top: 4px;
+  font-size: 18px;
+}
+.position{
+  padding: 8px 0;
+}
+.space{
+  height: 1px;
+  width: 100%;
+  background: white;
+}
+.location{
+  width: 100%;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: row;
+}
+.qr{
+  position: absolute;
+  right:20px;
+  top: 10px;
+}
+.doctor-detail{
+  flex: 1;
+}
+.good-in{
+  padding: 16px;
+}
+.good-in-title{
+  color:  cornflowerblue;
+  font-size: 18px;
+}
+.good-in-content{
+  margin-top: 8px;
+  padding: 8px ;
+  border-radius: 8px;
+  background:rgba(204, 204, 204,0.5);
+}
+.footer{
+  border-top: 1px solid #ccc;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.button{
+  background: yellowgreen;
+  color: white;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon{
+  box-sizing: border-box;
+  padding: 4px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+}
+.active{
+  opacity: 0.9;
+  background: #f7f7f7;
+}

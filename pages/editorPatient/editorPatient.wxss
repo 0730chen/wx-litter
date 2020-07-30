@@ -1,0 +1,120 @@
+/* pages/editorPatient/editorPatient.wxss */
+.editor-patient{
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.message-form{
+  height: 100%;
+  transform: translateY(20px);
+  width: 100%;
+}
+.relation{
+  background: white;
+  padding:12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.relation-text{
+  padding-right: 165px;
+}
+.avator{
+  margin-top: 20px;
+  background: white;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  padding:12px 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.avator-icon{
+  width: 32px;
+  background: #f5f5f5;
+  border-radius: 50%;
+  margin-left: 64px;
+  height: 32px;
+}
+.avator-container{
+  display: flex;
+  align-items: center;
+}
+.avator-change{
+  display: flex;
+  align-items: center;
+}
+.right{
+  width: 24px;
+  height: 24px;
+}
+.patient-name{
+  background: white;
+  display: flex;
+  border-bottom: 1px solid #f5f5f5;
+  padding:16px;
+}
+.input-name{
+  padding-left: 64px;
+}
+.patient-gender{
+  background: white;
+  padding:12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.patient-age{
+  background: white;
+  padding:12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.patient-physique{
+  margin-top: 24px;
+}
+.height-input{
+  margin-left: 6px;
+}
+.weight-input{
+  margin-left: 10px;
+}
+.height{
+  background: white;
+  display: flex;
+  border-bottom: 1px solid #f5f5f5;
+  padding:16px;
+}
+.patient-default{
+  background: white;
+  margin-top: 24px;
+  padding:12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.age{
+  padding-right: 120px;
+}
+.gender{
+  padding-right: 140px;
+}
+.picker{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.selecte-wrap{
+  width: 100%;
+}
+.save-message{
+  margin-top: 12px;
+}
+button{
+  width: 50%;
+}

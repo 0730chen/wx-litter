@@ -1,0 +1,20 @@
+<!--pages/patinetsManage/patientsManage.wxml-->
+<view class="patients-wrap">
+<view class="title">就诊人信息</view>
+<view wx:for="{{patientsList}}" wx:for-item="patients"wx:key="key" data-index="{{index}}"  bindtap="editorPatient">
+<view class="patients"> 
+<view class="patient-message">
+<image src="../image/avator.png" class="avator"></image>
+<view class="message">
+<view class="message-title">{{patients.userName}}</view>
+<view class="message-content">
+{{patients.age}}岁
+{{gender[patients.gender]}}
+</view>
+</view>
+</view>
+<image src="../image/editor.png" class="editor"></image>
+</view>
+</view>
+<button type="default" class="save-message" bindtap="addPatient">添加患者</button>
+</view>

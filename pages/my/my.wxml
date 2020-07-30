@@ -1,0 +1,38 @@
+<view class="message-wrap">
+<view class="message" bindtap="editorMessage" hover-class="hover-button">
+<view class="use-avator"> 
+<block wx:if="{{login}}">
+<!-- <open-data type="userAvatarUrl" class="avator"></open-data>
+<view class="user-message">  
+<open-data type="userNickName"></open-data>
+<open-data type="userGender" lang="zh_CN"></open-data> -->
+<image src="../image/avator.png" class="avator"></image>
+<block wx:if="{{message}}">
+<view class="user-message">
+<text class="userName">{{message.userName}}</text>
+<text class="gender">{{genderType[message.gender]}}</text>
+</view>
+</block>
+<block wx:else>
+请完善个人信息
+</block>
+<!-- </view> -->
+</block>
+<block wx:else>
+<image src="../image/avator.png" class="avator"></image>
+</block>
+</view>
+<!-- 需要使用 button 来授权登录 -->
+<block wx:if="{{!login}}">
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</block>
+<image src="../image/right.png" class="right"></image>
+</view>
+<view class="patients-wrap" bindtap="managePatients">
+<view class="patients-icon">
+<image src="../image/patients.png" class="patients"></image>
+就诊人管理
+</view>
+<image src="../image/right.png" class="right"></image>
+</view>
+</view>

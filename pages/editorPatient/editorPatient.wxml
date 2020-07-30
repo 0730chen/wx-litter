@@ -1,0 +1,51 @@
+<!--pages/editorPatient/editorPatient.wxml-->
+<view class="editor-patient">
+<view class="message-form">
+<view class="relation">
+<picker bindchange="bindRelation" value="{{relationIndex}}" range="{{relationArray}}" class="selecte-wrap">
+    <view class="picker">
+    与户主关系<text class="relation-text">{{relation}}</text><image src="../image/right.png" class="right"></image>
+    </view>
+  </picker>
+</view>
+<view class="avator">
+<view class="avator-container">
+头像
+<image src="../image/avator.png" class="avator-icon"></image>
+</view>
+<view class="avator-change" bindtap="changeAvator">
+更换
+<image src="../image/right.png" class="right"></image>
+</view>
+</view>
+<view class="patient-name">
+姓名<input placeholder="请输入" class="input-name" model:value="{{userName}}"></input>
+</view>
+<view class="patient-gender">
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="selecte-wrap">
+    <view class="picker">
+      性别<text class="gender">{{genderType[gender]}}</text><image src="../image/right.png" class="right"></image>
+    </view>
+  </picker>
+</view>
+<view class="patient-age" bindchange="bindTimeChange">
+ <picker mode="date" value="{{date}}"start="1930-01-01" end="2020-7-31"class="selecte-wrap" bindchange="bindDateChange">
+    <view class="picker">
+    年龄<text class="age">{{age}}</text><image src="../image/right.png" class="right"></image>
+    </view>
+  </picker>
+</view>
+<view class="patient-physique">
+<view class="height">
+身高（cm）<input placeholder="请输入" class="height-input" type="number" model:value="{{height}}"></input>
+</view>
+<view class="height">
+体重（kg）<input placeholder="请输入" class="weight-input" type="number" model:value="{{weight}}"></input>
+</view>
+</view>
+<view class="patient-default">
+设置为默认就诊人<switch checked="{{default}}" bindchange="defaultChange"></switch>
+</view>
+<button type="primary" class="save-message" bindtap="saveMessage">保存</button>
+</view>
+</view>

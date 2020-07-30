@@ -1,0 +1,41 @@
+<!--pages/home/home.wxml-->
+<view class="home-wrap">
+<view class="tabs">
+<view class="med {{active===1?'selected':''}}"  bindtap="changeActive" data-index="1">预诊</view>
+<view class="dis {{active===2?'selected':''}}" bindtap="changeActive" data-index="2">病历</view>
+</view>
+<block wx:if="{{active===1}}">
+<view class="patient-list">
+<block wx:if="{{patientList.length>0}}">
+<van-cell-group>
+<van-cell wx:for="{{patientList}}" wx:key="index" wx:for-item="patient" title="{{patient.title}}" is-link  class="patient" hover-class="hover-button" bindtap="onPatient" data-index="{{index}}">
+</van-cell>
+</van-cell-group>
+</block>
+<block wx:else>
+<view class="no-doctor">
+<image src="../image/document.png" class="document"></image>
+还没有预诊信息
+</view>
+</block>
+</view>
+</block>
+<block wx:else>
+<view class="doctor-list">
+<block wx:if="{{doctorList.length>0}}">
+<van-cell-group wx:for="{{doctorList}}" wx:key="index">
+<van-cell wx:for="{{doctorList}}"  is-link  wx:key="index" class="doctor" title="{{item.title}}" hover-class="hover-button" data-index="{{index}}">
+</van-cell>
+</van-cell-group>
+</block>
+<block wx:else>
+<view class="no-doctor">
+<image src="../image/document.png" class="document"></image>
+还没有记录
+</view>
+</block>
+</view>
+</block>
+<scan-component></scan-component>
+
+</view>

@@ -1,0 +1,50 @@
+<!--pages/doctorDetail/doctorDetail.wxml-->
+<view class="detail-wrap">
+<view class="doctor-detail">
+<view class="detail-card">
+<view class="avator">
+<van-image
+  round
+  width="80px"
+  height="80px"
+  src="https://img.yzcdn.cn/vant/cat.jpeg"
+/>
+</view>
+<view class="positon-message">
+<text class="user-name">李医生</text>
+<text class="position">中医师</text>
+</view>
+<view class="space"></view>
+<view class="location"> 
+<van-icon name="location-o" />
+<text>萧山天人大厦</text>
+</view>
+<van-icon name="qr"  class="qr" size="36px"/>
+</view>
+<view class="good-in">
+<view class="good-in-title">
+擅长领域
+</view>
+<view class="good-in-content">
+中医
+</view>
+</view>
+</view>
+<view class="footer">
+<view class="icon" hover-class="active" bindtap="addAttention">
+<van-icon name="star" size="20px" color="#ccc" color="{{attentionColor}}"/>
+<text>关注</text>
+</view>
+<view class="icon" hover-class="active">
+<van-icon name="share"  size="20px" color="#ccc"/>
+<text>转发</text>
+</view>
+<view class="icon" hover-class="active">
+<van-icon name="phone"  size="20px"  color="#ccc"/>
+<text>通话</text>
+</view>
+<view class="button">
+<text>预约</text>
+</view>
+</view>
+</view>

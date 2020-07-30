@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/patient/patient",
+    "pages/doctor/doctor",
+    "pages/nearby/nearby",
+    "pages/editorMessage/editorMessage",
+    "pages/patinetsManage/patientsManage",
+    "pages/editorPatient/editorPatient",
+    "pages/searchDoctor/searchDoctor",
+    "pages/doctorDetail/doctorDetail"
+  ],
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "检测您未打开井颐得定位权限，是否去打开"
+    }
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "井颐医疗",
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "light"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#00FF00",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/image/home2.png",
+        "selectedIconPath": "pages/image/home.png"
+      },
+      {
+        "pagePath": "pages/doctor/doctor",
+        "iconPath": "pages/image/doctor.png",
+        "selectedIconPath": "pages/image/doctor2.png",
+        "text": "医生"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/image/my.png",
+        "selectedIconPath": "pages/image/my2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+}

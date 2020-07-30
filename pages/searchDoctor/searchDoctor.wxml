@@ -1,0 +1,13 @@
+<!--pages/searchDoctor/searchDoctor.wxml-->
+<view class="search-wrap">
+<view class="search-title">
+<van-search
+class="search"
+  value="{{ value }}"
+  focus="{{true}}"
+  bind:change="inputChange"
+  placeholder="请输入医生姓名"
+/>
+<van-button type="primary" size="small" bind:click="onSearch">搜索</van-button>
+</view>
+</view>
