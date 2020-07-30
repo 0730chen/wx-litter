@@ -1,0 +1,29 @@
+<!--components/doctorMessage/doctorMessage.wxml-->
+<view class="doctor-list">
+ <van-panel use-footer-slot >
+ <view class="doctor-message" bindtap="doctorDetail">
+    <van-image
+  round
+  width="64px"
+  height="64px"
+  src="https://img.yzcdn.cn/vant/cat.jpeg"
+/>
+<view class="detail-message">
+<view class="detail-title">
+<view class="detail-title-name">
+<text class="user-name">张一川</text><text class="position">副主任</text>
+</view>
+<van-cell title="萧山天人大厦" icon="location-o" border="{{false}}"/>
+</view>
+</view>
+<van-icon name="phone" color="#CCC" size='20px'/>
+ </view>
+<view>
+<view class="good-at">擅长:中医</view>
+</view>
+  <view slot="footer" class="op">
+  <view class="forward" hover-class="active">转发</view>
+  <view class="diagnosis" hover-class="active">预诊</view>
+  </view>
+</van-panel>
+</view>

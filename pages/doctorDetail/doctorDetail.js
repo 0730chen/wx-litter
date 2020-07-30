@@ -66,6 +66,16 @@ Page({
   },
   addAttention(){
     console.log(111)
+    Dialog.confirm({
+      title: '标题',
+      message: '弹窗内容',
+    })
+      .then(() => {
+        // on confirm
+      })
+      .catch(() => {
+        // on cancel
+      });
     this.setData({
       attentionColor:'yellow'
     })

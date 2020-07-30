@@ -19,6 +19,7 @@ Component({
    */
   methods: {
     onScan(){
+      console.log(111)
       wx.scanCode({
         success (res) {
           console.log(res)

@@ -7,16 +7,16 @@ Page({
   data: {
     active:1,
     patientList:[
-      {title:'病人一'},
-      {title:'病人二'},
-      {title:'病人三'},
-      {title:'病人四'}
+      {title:'预约一'},
+      {title:'预约二'},
+      {title:'预约三'},
+      {title:'预约四'}
     ],
     doctorList:[
-      {title:'预约一'}
+      {title:'病历一'}
     ]
   },
-  //切换患者和医生
+  //切换预约和病历
   changeActive(e){
     let index = parseInt(e.target.dataset.index)
     if(this.data.active===index){
