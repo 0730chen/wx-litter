@@ -17,7 +17,7 @@
 <view class="doctor-container">
 <block wx:if="{{attentionDoctor.length>0}}">
 <van-cell-group>
-<doctor-message />
+<doctor-message wx:for="{{attentionDoctor}}" name="{{item.name}}" wx:key='index' />
 </van-cell-group>
 </block>
 <block wx:else>

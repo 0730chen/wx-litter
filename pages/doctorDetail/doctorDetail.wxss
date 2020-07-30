@@ -72,14 +72,14 @@ page{
   justify-content: space-between;
 }
 .button{
-  background: yellowgreen;
   color: white;
+  background:rgb(110, 149, 237) ;
   width: 50%;
-  height: 100%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50px;
 }
 .icon{
   box-sizing: border-box;

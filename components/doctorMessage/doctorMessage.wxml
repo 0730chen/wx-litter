@@ -11,7 +11,7 @@
 <view class="detail-message">
 <view class="detail-title">
 <view class="detail-title-name">
-<text class="user-name">张一川</text><text class="position">副主任</text>
+<text class="user-name">{{name}}</text><text class="position">副主任</text>
 </view>
 <van-cell title="萧山天人大厦" icon="location-o" border="{{false}}"/>
 </view>

@@ -57,9 +57,10 @@ Page({
   bindGetUserInfo(){
     wx.getUserInfo({
       success:res=>{
+        console.log(res)
         console.log(this.data.login)
         this.setData({
-          login:true
+          login:true,
         })
       }
     })
@@ -100,6 +101,7 @@ Page({
       this.setData({
         age:message.age,
         userName:message.userName,
+        gender:message.gender
       })
     }
   },

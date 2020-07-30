@@ -1,4 +1,7 @@
 /* pages/searchDoctor/searchDoctor.wxss */
+page{
+  background: white;
+}
 .search-title{
   display: flex;
   flex-direction: row;
