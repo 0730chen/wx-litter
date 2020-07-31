@@ -1,5 +1,0 @@
-<!--components/form/form.wxml--> 
-<view class="form-wrap">
-这是一个表单组件
-<slot></slot>
-</view>

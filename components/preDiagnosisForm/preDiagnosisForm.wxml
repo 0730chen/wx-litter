@@ -1,0 +1,5 @@
+<!--components/preDiagnosisForm/preDiagnosisForm.wxml-->
+
+<view>
+这是一个预诊表单
+</view>

@@ -32,7 +32,7 @@
 </view>
 <view class="footer">
 <view class="icon" hover-class="active" bindtap="addAttention">
-<van-icon name="star" size="20px" color="#ccc" color="{{attentionColor}}"/>
+<van-icon name="star" size="20px" color="rgb(255,210,30)" color="{{attentionColor}}"/>
 <text>关注</text>
 </view>
 <view class="icon" hover-class="active">

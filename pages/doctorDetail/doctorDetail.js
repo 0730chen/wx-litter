@@ -66,7 +66,7 @@ Page({
   },
   addAttention(){
     this.setData({
-      attentionColor:'yellow'
+      attentionColor:'rgb(255,210,30)'
     })
   }
 })
