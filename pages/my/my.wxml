@@ -29,7 +29,7 @@
 </view>
 <!-- 需要使用 button 来授权登录 -->
 <block wx:if="{{!login}}">
-<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap="login">授权登录</view>
 </block>
 <image src="../image/right.png" class="right"></image>
 </view>

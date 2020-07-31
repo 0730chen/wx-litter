@@ -11,7 +11,7 @@
 <view class="title">
 <text class="name">{{name}}</text>
 <text class="position">中医师</text>
-<van-icon name="star" color="yellow" />
+<van-icon name="star" color="rgb(255,210,30)" size="20px" />
 </view>
 <view class="location">
 <van-cell title="地址信息" icon="location-o" border="{{false}}" />
@@ -46,6 +46,6 @@
 </view>
 </view>
 <view class="status">
-待预约
+待就诊
 </view>
 </view>

@@ -119,7 +119,7 @@ Page({
       var myEventOption = {} // 触发事件的选项
       this.triggerEvent('myevent', myEventDetail, myEventOption)
     },
-    getUserMessage(){
+  getUserMessage(){
       console.log(111)
       wx.showToast({
         title:'成功',
@@ -137,5 +137,7 @@ Page({
           })
         }
       })
+    },
+    login(){
     }
 })

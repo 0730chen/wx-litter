@@ -24,10 +24,13 @@
 }
 .title{
   padding-left: 16px;
+  display: flex;
+  align-items: center;
 }
 .position{
   padding:0 16px;
-  color: aquamarine;
+  color: rgb(19, 77, 155);
+
 }
 .patient-readme{
   padding: 8px 16px;
@@ -55,7 +58,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  background:cyan;
+  background:rgb(19, 77, 155);
   color: white;
   padding: 0 8px;
 }
@@ -72,5 +75,5 @@
 .right{
   width: 33.3%;
   text-align: center;
-  color: aqua;
+  
 }
