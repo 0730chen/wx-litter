@@ -7,10 +7,10 @@
 <block wx:if="{{active===1}}">
 <view class="patient-list">
 <block wx:if="{{patientList.length>0}}">
-<van-cell-group>
-<van-cell wx:for="{{patientList}}" wx:key="index" wx:for-item="patient" title="{{patient.title}}" is-link  class="patient" hover-class="hover-button" bindtap="onPatient" data-index="{{index}}">
-</van-cell>
-</van-cell-group>
+<!-- <van-cell wx:for="{{patientList}}" wx:key="index" wx:for-item="patient" title="{{patient.title}}" is-link  class="patient" hover-class="hover-button" bindtap="onPatient" data-index="{{index}}">
+</van-cell> -->
+<pre-diagnosis wx:for="{{patientList}}" wx:key="index" wx:for-item="patient"  name="{{patient.title}}"></pre-diagnosis>
+<view class="no-more">没有更多了</view>
 </block>
 <block wx:else>
 <view class="no-doctor">
@@ -23,10 +23,11 @@
 <block wx:else>
 <view class="doctor-list">
 <block wx:if="{{doctorList.length>0}}">
-<van-cell-group wx:for="{{doctorList}}" wx:key="index">
+<!-- <van-cell-group wx:for="{{doctorList}}" wx:key="index">
 <van-cell wx:for="{{doctorList}}"  is-link  wx:key="index" class="doctor" title="{{item.title}}" hover-class="hover-button" data-index="{{index}}">
 </van-cell>
-</van-cell-group>
+</van-cell-group> -->
+<medical-record wx:for="{{doctorList}}"  is-link  wx:key="index" class="doctor"></medical-record>
 </block>
 <block wx:else>
 <view class="no-doctor">
@@ -37,5 +38,4 @@
 </view>
 </block>
 <scan-component></scan-component>
-
 </view>

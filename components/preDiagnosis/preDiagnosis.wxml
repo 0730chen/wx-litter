@@ -1,0 +1,51 @@
+<!--components/preDiagnosis/preDiagnosis.wxml-->
+<view class="diagnosis-card">
+<view class="diagnosis-title">
+<van-image
+  round
+  width="64px"
+  height="64px"
+  src="https://img.yzcdn.cn/vant/cat.jpeg"
+/>
+<view class="message">
+<view class="title">
+<text class="name">{{name}}</text>
+<text class="position">中医师</text>
+<van-icon name="star" color="yellow" />
+</view>
+<view class="location">
+<van-cell title="地址信息" icon="location-o" border="{{false}}" />
+</view>
+</view>
+</view>
+
+
+<view class="patient-readme">
+<view class="readme-title">
+<view class="readme-title-icon">
+<van-icon name="contact" color="green"/>
+<text class="user-name"></text>
+<text class="age">18岁</text>
+<text class="gender">男</text>
+</view>
+<view class="create-time">2020-07-31</view>
+</view>
+<view class="readme-message">
+自述：溢出溢出溢出溢出溢出溢出溢出溢出溢出溢出溢出溢出溢出溢出溢出溢出溢出溢出
+</view>
+</view>
+
+<view class="operating">
+<view class="op">
+</view>
+<view class="op">
+开启复诊
+</view>
+<view class="right">
+查看病历
+</view>
+</view>
+<view class="status">
+待预约
+</view>
+</view>

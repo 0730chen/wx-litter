@@ -74,8 +74,8 @@
 				},
 				{
 					"id": 1,
-					"name": "pages/home/home",
-					"pathName": "pages/home/home",
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
 					"query": "",
 					"scene": null
 				}

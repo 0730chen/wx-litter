@@ -1,0 +1,42 @@
+<!--components/medicalRecord/medicalRecord.wxml-->
+<view class="record-wrap">
+<view class="record-ttile">
+<van-image
+  round
+  width="48px"
+  height="48px"
+  src="https://img.yzcdn.cn/vant/cat.jpeg"
+/>
+<view class="patient-message">
+<view class="patient-message-wrap">
+<view class="patient-title">
+<text class="user-name">哈哈</text>
+<text class="user-age">23岁</text>
+<text class="user-gender">男</text>
+</view>
+<view class="created">
+2020-07-31
+</view>
+</view>
+<view class="disease">
+病症：
+</view>
+</view>
+</view>
+<view class="doctor-message">
+<van-image
+  round
+  width="24px"
+  height="24px"
+  src="https://img.yzcdn.cn/vant/cat.jpeg"
+/>
+<text class="doctor-name">王医生</text>
+<text class="doctor-position">副主任医生</text>
+</view>
+<view class="operating">
+<view class="op">调理建议</view>
+<view class="op">开始复诊</view>
+<view class="right">疗程反馈</view>
+</view>
+
+</view>

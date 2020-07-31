@@ -6,7 +6,12 @@
 <view class="user-message">  
 <open-data type="userNickName"></open-data>
 <open-data type="userGender" lang="zh_CN"></open-data> -->
-<image src="../image/avator.png" class="avator"></image>
+<van-image
+  round
+  width="32px"
+  height="32px"
+  src="https://img.yzcdn.cn/vant/cat.jpeg"
+/>
 <block wx:if="{{userName}}">
 <view class="user-message">
 <text class="userName">{{userName?userName:message.userName}}</text>

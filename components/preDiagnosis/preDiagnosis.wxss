@@ -1,0 +1,76 @@
+/* components/preDiagnosis/preDiagnosis.wxss */
+.diagnosis-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 8px 16px;
+  margin: 8px;
+}
+.diagnosis-title{
+  display: flex;
+  flex-direction: row;
+}
+.message{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-left: 16px;
+  flex: 1;
+}
+.name{
+  color: black;
+  font-weight: 700;
+}
+.title{
+  padding-left: 16px;
+}
+.position{
+  padding:0 16px;
+  color: aquamarine;
+}
+.patient-readme{
+  padding: 8px 16px;
+  background: rgb(245, 245, 245)
+}
+.readme-title{
+  display: flex;
+  justify-content: space-between;
+}
+.readme-title-icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between
+}
+.age{
+  padding: 8px;
+}
+.readme-message{
+  overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.status{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background:cyan;
+  color: white;
+  padding: 0 8px;
+}
+.operating{
+  display: flex;
+  flex-direction: row;
+  padding: 8px ;
+}
+.op{
+  width: 33.3%;
+  text-align: center;
+  border-right:1px solid #ccc ;
+}
+.right{
+  width: 33.3%;
+  text-align: center;
+  color: aqua;
+}

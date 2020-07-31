@@ -2,6 +2,8 @@
   "usingComponents": {
     "scan-component":"../../components/scan/scan",
     "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index"
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "pre-diagnosis":"../../components/preDiagnosis/preDiagnosis",
+    "medical-record":"../../components/medicalRecord/medicalRecord"
   }
 }
