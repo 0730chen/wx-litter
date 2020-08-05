@@ -1,0 +1,74 @@
+/* components/patientMessage/patientMessage.wxss */
+.patients-wrap{
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+}
+.save-message{
+  margin-top: 24px;
+  background-color: white !important
+}
+.avator{
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  background: #f5f5f5;
+}
+.editor{
+  width: 24px;
+  height: 24px;
+}
+.patients{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding: 8px 16px;
+  background: white;
+}
+.patient-message{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.message{
+  padding: 0 16px;
+}
+.message-title{
+  font-weight: 500;
+}
+.message-content{
+  color: #bfbfbf;
+  font-size: 12px;
+}
+.title{
+  padding:8px 0 0 16px;
+}
+button{
+  width: 50%;
+}
+.right{
+  height: 16px;
+  width: 16px;
+}
+.right-icon{
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.date-section{
+  padding: 8px 16px;
+  margin-top: 8px;
+  background: white;
+}
+.section{
+  position: relative;
+  display: flex;
+  margin-top: 8px;
+  padding: 8px 24px 8px 8px;
+  justify-content: space-between;
+}

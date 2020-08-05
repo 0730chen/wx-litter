@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "navigationBarTitleText": "预诊信息",
+  "usingComponents": {
+    "pre-form":"../../components/preDiagnosisForm/preDiagnosisForm"
+  }
+}

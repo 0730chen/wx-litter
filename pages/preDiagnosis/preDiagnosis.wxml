@@ -1,0 +1,5 @@
+<!--pages/preDiagnosis/preDiagnosis.wxml-->
+<view>
+<pre-form patientMessage="{{patientMessage}}"></pre-form>
+    <button class="mini-btn" type="primary">提交</button>
+</view>

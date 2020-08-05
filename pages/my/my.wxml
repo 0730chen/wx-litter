@@ -33,11 +33,5 @@
 </block>
 <image src="../image/right.png" class="right"></image>
 </view>
-<view class="patients-wrap" bindtap="managePatients">
-<view class="patients-icon">
-<image src="../image/patients.png" class="patients"></image>
-就诊人管理
-</view>
-<image src="../image/right.png" class="right"></image>
-</view>
+<pre-form patientMessage="{{patientMessage}}"></pre-form>
 </view>

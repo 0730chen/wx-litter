@@ -27,7 +27,7 @@
 </view>
   <view slot="footer" class="op">
   <view class="forward" hover-class="active">转发</view>
-  <view class="diagnosis" hover-class="active">预诊</view>
+  <view class="diagnosis" hover-class="active" bindtap="onPreDiagnosis">预诊</view>
   </view>
 </van-panel>
 </view>

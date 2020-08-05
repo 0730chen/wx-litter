@@ -11,7 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    patientMessage:{id:1,userName:'哈哈',gender:1,age:24},
   },
 
   /**

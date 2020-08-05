@@ -2,4 +2,16 @@
 
 <view>
 这是一个预诊表单
+<view>需要用户填写自己的信息数据</view>
+<doctor-message></doctor-message>
+<view>
+基本信息
+</view>
+<view class="patient-wrap">
+<view>
+<patient-card patientMessage="{{patientMessage}}"></patient-card>
+</view>
+<view>
+</view>
+</view>
 </view>

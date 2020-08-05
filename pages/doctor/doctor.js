@@ -88,6 +88,13 @@ Page({
       })
     }
   },
+  //点击预约
+  preDiagnosis(){
+    console.log('预约')
+    wx.navigateTo({
+      url: '../preDiagnosis/preDiagnosis',
+    })
+  },
   /**
    * 点击附近医生获取地理信息
    */

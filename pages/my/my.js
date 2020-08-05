@@ -14,7 +14,8 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     avator:'',
-    login:false
+    login:false,
+    patientMessage:{id:1,userName:'哈哈',gender:1,age:24},
   },
   /*
   选择selectComponent是根据组件的class或者id进行选择，可以获取子组件实例

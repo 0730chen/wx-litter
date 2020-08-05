@@ -10,7 +10,8 @@
     "pages/patinetsManage/patientsManage",
     "pages/editorPatient/editorPatient",
     "pages/searchDoctor/searchDoctor",
-    "pages/doctorDetail/doctorDetail"
+    "pages/doctorDetail/doctorDetail",
+    "pages/preDiagnosis/preDiagnosis"
   ],
   "usingComponents": {
     "van-button": "@vant/weapp/button/index"

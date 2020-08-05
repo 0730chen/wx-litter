@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "doctor-message":"../../components/doctorMessage/doctorMessage",
+    "patient-card":"../../components/patientMessage/patientMessage"
+  }
 }
