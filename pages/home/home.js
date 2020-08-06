@@ -7,10 +7,10 @@ Page({
   data: {
     active:1,
     patientList:[
-      {title:'预约一'},
-      {title:'预约二'},
-      {title:'预约三'},
-      {title:'预约四'}
+      {userName:'吴用',status:0},
+      {userName:'张三',status:1},
+      {userName:'李四',status:0},
+      {userName:'林冲',status:1}
     ],
     doctorList:[
       {title:'病历一'}

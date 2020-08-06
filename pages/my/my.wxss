@@ -51,6 +51,18 @@
 .patient-manage{
   margin-top: 8px;
 }
+.address{
+  margin-top: 8px;
+}
+.service{
+  margin-top: 8px;
+}
+.statement{
+  margin-top: 32px;
+  text-align: center;
+  font-size: 10px;
+  color:black;
+}
 .patients{
   height: 32px;
   width: 32px;

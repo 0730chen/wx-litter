@@ -5,7 +5,7 @@
 </view>
 <view class="doctor-list">
  <van-panel use-footer-slot >
- <view class="doctor-message" bindtap="doctorDetail">
+ <view class="doctor-message">
     <van-image
   round
   width="64px"

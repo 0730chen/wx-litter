@@ -54,11 +54,19 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.status{
+.status1{
   position: absolute;
   right: 0;
   top: 0;
-  background:rgb(19, 77, 155);
+  background:rgb(28, 87, 165);
+  color: white;
+  padding: 0 8px;
+}
+.status2{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background:rgb(255, 210, 30);
   color: white;
   padding: 0 8px;
 }
@@ -75,5 +83,5 @@
 .right{
   width: 33.3%;
   text-align: center;
-  
+  color: rgb(28, 87, 165)
 }

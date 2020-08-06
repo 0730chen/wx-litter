@@ -89,8 +89,8 @@ Page({
     }
   },
   //点击预约
-  preDiagnosis(){
-    console.log('预约')
+  preDiagnosis(e){
+    console.log(e)
     wx.navigateTo({
       url: '../preDiagnosis/preDiagnosis',
     })

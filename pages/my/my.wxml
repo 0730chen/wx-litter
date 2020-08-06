@@ -36,10 +36,11 @@
 <view class="patient-manage">
 <van-cell title="患者管理" is-link link-type="navigateTo" url="/pages/patinetsManage/patientsManage"/>
 </view>
-<view class="service">
+<view class="address">
 <van-cell title="地址管理" is-link />
 </view>
 <view class="service">
 <van-cell title="服务协议" is-link />
 </view>
+<view class="statement">-由井颐健康提供服务-</view>
 </view>

@@ -9,7 +9,7 @@
 />
 <view class="message">
 <view class="title">
-<text class="name">{{name}}</text>
+<text class="name">{{patient.userName}}</text>
 <text class="position">中医师</text>
 <van-icon name="star" color="rgb(255,210,30)" size="20px" />
 </view>
@@ -18,8 +18,6 @@
 </view>
 </view>
 </view>
-
-
 <view class="patient-readme">
 <view class="readme-title">
 <view class="readme-title-icon">
@@ -38,14 +36,38 @@
 <view class="operating">
 <view class="op">
 </view>
+<block wx:if="{{patient.status===0}}">
+<view class="op" bindtap="cancelPre">
+取消预诊
+</view>
+</block>
+<block wx:else>
 <view class="op">
 开启复诊
 </view>
+</block>
+
+<block wx:if="{{patient.status===0}}">
+<view class="right">
+修改预诊
+</view>
+</block>
+<block wx:else>
 <view class="right">
 查看病历
 </view>
+</block>
 </view>
-<view class="status">
+<block wx:if="{{patient.status===0}}">
+<view class="status1">
 待就诊
 </view>
+</block>
+<block wx:else>
+<view class="status2">
+已就诊
+</view>
+</block>
+<van-dialog id="van-dialog"/>
+<van-toast id="van-toast"/>
 </view>

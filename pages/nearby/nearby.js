@@ -103,8 +103,8 @@ Page({
   跳转到预诊表单
   */ 
  onPreDiagnosis(){
+   console.log(1)
    wx.navigateTo({
-     url: '../p',
    })
  }
 })

@@ -1,7 +1,7 @@
 <!--components/doctorMessage/doctorMessage.wxml-->
 <view class="doctor-list">
  <van-panel use-footer-slot >
- <view class="doctor-message" bindtap="doctorDetail">
+ <view class="doctor-message">
     <van-image
   round
   width="64px"
@@ -22,8 +22,15 @@
 <view class="good-at">擅长:中医</view>
 </view>
   <view slot="footer" class="op">
-  <view class="forward" hover-class="active">转发</view>
-  <view class="diagnosis" hover-class="active">预诊</view>
+  <view class="forward" hover-class="active" bindtap="onOpen">转发</view>
+  <view class="diagnosis" hover-class="active" bindtap="preDiagnosis">预诊</view>
   </view>
+  <van-action-sheet
+  show="{{ show }}"
+  actions="{{ actions }}"
+  cancel-text="取消"
+  bind:close="onClose"
+  bind:select="onSelect"
+  />
 </van-panel>
 </view>
