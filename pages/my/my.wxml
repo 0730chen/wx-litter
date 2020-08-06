@@ -33,5 +33,13 @@
 </block>
 <image src="../image/right.png" class="right"></image>
 </view>
-<pre-form patientMessage="{{patientMessage}}"></pre-form>
+<view class="patient-manage">
+<van-cell title="患者管理" is-link link-type="navigateTo" url="/pages/patinetsManage/patientsManage"/>
+</view>
+<view class="service">
+<van-cell title="地址管理" is-link />
+</view>
+<view class="service">
+<van-cell title="服务协议" is-link />
+</view>
 </view>

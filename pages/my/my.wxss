@@ -9,7 +9,7 @@
 .message{
   display: flex;
   flex-direction: row;
-  padding: 16px 24px;
+  padding: 16px 18px;
   background: white;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +47,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.patient-manage{
+  margin-top: 8px;
 }
 .patients{
   height: 32px;

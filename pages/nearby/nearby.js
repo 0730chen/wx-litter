@@ -1,11 +1,17 @@
 // pages/nearby/nearby.js
+var QQMapWX = require('../../lib/qqmap-wx-jssdk.js');
+qqmapsdk = new QQMapWX({
+  key: 'LDKBZ-WJYK6-G7LSI-MWBA4-5XGO2-PAFJQ'
+});
+var qqmapsdk;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    location:{}
+    location:{},
+    address:''
   },
 
   /**
@@ -20,6 +26,24 @@ Page({
         location:data.location
       })
     })
+    console.log(this.data)
+    qqmapsdk.reverseGeocoder({
+      location:{
+        latitude: this.data.location.latitude,
+        longitude: this.data.location.longitude
+      },
+      success:(res)=>{
+        console.log(res)
+        this.setData({
+          address:res.result.address
+        })
+      },
+      fail:(err)=>{
+        console.log(err)
+      },
+
+
+    })
   },
 
   /**
@@ -33,7 +57,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
   },
 
   /**

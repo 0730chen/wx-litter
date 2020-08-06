@@ -4,7 +4,7 @@
 这是一个预诊表单
 <view>需要用户填写自己的信息数据</view>
 <doctor-message></doctor-message>
-<view>
+<view class="basic-message">
 基本信息
 </view>
 <view class="patient-wrap">

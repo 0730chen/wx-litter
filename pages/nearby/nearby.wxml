@@ -1,7 +1,7 @@
 <!--pages/nearby/nearby.wxml-->
 <view class="nearby-wrap">
 <view class="title">
-<van-cell title="地址" icon="location-o" />
+<van-cell title="{{address}}" icon="location-o" />
 </view>
 <view class="doctor-list">
  <van-panel use-footer-slot >

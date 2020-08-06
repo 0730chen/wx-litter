@@ -1,1 +1,6 @@
 /* components/preDiagnosisForm/preDiagnosisForm.wxss */
+.basic-message{
+  height: 100%;
+  padding: 8px;
+  color: rgb(19, 77, 155);
+}
