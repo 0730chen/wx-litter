@@ -4,6 +4,8 @@
   "usingComponents": {
     "pre-form":"../../components/preDiagnosisForm/preDiagnosisForm",
     "van-cell-group": "@vant/weapp/cell-group/index",
-    "van-field": "@vant/weapp/field/index"
+    "van-field": "@vant/weapp/field/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-image": "@vant/weapp/image/index"
   }
 }

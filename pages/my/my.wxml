@@ -32,7 +32,7 @@
 </view>
 
 <view class="patient-manage">
-  <van-cell title="患者管理" is-link link-type="navigateTo" url="/pages/patinetsManage/patientsManage" size="large"/>
+  <van-cell title="患者管理" is-link link-type="navigateTo" url="/pages/patinetsManage/patientsManage?key=my" size="large"/>
 </view>
 
 <view class="address">

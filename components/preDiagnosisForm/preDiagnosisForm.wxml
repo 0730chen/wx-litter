@@ -10,5 +10,4 @@
         <patient-card patientMessage="{{patientMessage}}"></patient-card>
       </view>
     </view>
-
 </view>

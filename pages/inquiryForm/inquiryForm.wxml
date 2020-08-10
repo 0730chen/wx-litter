@@ -1,0 +1,20 @@
+<!--pages/inquiryForm/inquiryForm.wxml-->
+<view class="inquiry-wrap">
+  <view class="question-container">
+    <view class="question" wx:for="{{questionList}}" wx:for-index="questionIndex" wx:key="key" wx:for-item="question">
+      <view class="question-title">
+        {{questionIndex+1}}/{{questionList.length}}，{{question.title}}?
+      </view> 
+      <van-row class="question-wrap" gutter="20">
+        <van-col span="12" wx:for="{{question.options}}"  wx:key="index">
+          <van-checkbox-group value="{{question.value}}" bind:change="onChange" data-index="{{questionIndex}}" data-id="{{index}}">
+            <van-checkbox name="{{item.value}}">{{item.des}}</van-checkbox>
+          </van-checkbox-group>
+        </van-col>
+      </van-row> 
+    </view>
+  </view>
+  <view class="submit">
+    <van-button type="primary">主要按钮</van-button>    
+  </view>
+</view>

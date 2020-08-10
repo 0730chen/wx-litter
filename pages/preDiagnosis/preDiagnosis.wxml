@@ -1,19 +1,41 @@
 <!--pages/preDiagnosis/preDiagnosis.wxml-->
-<view>
-<pre-form patientMessage="{{patientMessage}}"></pre-form>
-    <view class="input-disease">
-        <view class="title">病症描述</view>
-        <van-cell-group>
+<view class="pre-form">
+    <view class="pre-form-wrap">
+        <pre-form patientMessage="{{patientMessage}}"></pre-form>
+            <view class="input-disease">
+                <view class="title">病症描述</view>
+                    <view class="input">
             <van-field
             type="textarea"
             model:value="{{ value }}"
             placeholder="请输入症状描述"
             show-word-limit
+            input-class="input-class"
             maxlength="150"
             bind:change="onChange"
                 />
-        </van-cell-group>
+        </view>
     </view>
+
+    <view class="input-action">
+        <view class="placeholder"></view>
+        <view class="placeholder" hover-class="active" bindtap="inquiryPage">问诊单</view>
+    </view>
+
+    <view class="photo-wrap">
+        <view class="title">上传照片</view>
+        <view class="photo-action">
+            <view class="des">上传正面照，舌苔照（请在日阳光下拍照,并关闭美颜相机）</view>
+               <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" >
+            </van-uploader>
+        </view>
+        <view class="photo-action">
+            <view class="des">上传患处照片，化验单，检查报告等照片(最多上传12张图片)</view>
+            <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" max-count="12"  bind:before-read="uploadFile"  use-before-read>
+            </van-uploader>
+            </view>
+        </view>
+  </view>
     <view class="submit">
         <button class="mini-btn" type="primary">提交</button>
     </view>

@@ -28,8 +28,13 @@ Component({
       this.setData({
         date: e.detail.value
       })
+    },
+    //患者选择
+    changePatient(){
+      wx.navigateTo({
+        url: '../../pages/patinetsManage/patientsManage?key=pre',
+      })
     }
-
   },
   ready:function(){
     let date = util.formatTime(new Date)

@@ -5,6 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
+    radio: '1',
+    //标题
+    title:'',
+    //当前页面是管理还是选择
+    status:false,
     patientsList:[
       {id:1,userName:'哈哈',gender:1,age:24},
       {id:2,userName:'依依',gender:1,age:18},
@@ -16,6 +21,11 @@ Page({
       0:'女',
       1:'男'
     }
+  },
+  onChange(event) {
+    this.setData({
+      radio: event.detail,
+    });
   },
 
   //编辑患者信息
@@ -44,7 +54,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
+    let key = options.key
+    if(key==='my'){
+      this.setData({
+        title:'患者管理'
+      })
+    }else{
+      this.setData({
+        title:'选择预约患者',
+        status:true
+      })
+    }
   },
 
   /**

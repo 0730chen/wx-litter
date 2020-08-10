@@ -25,6 +25,8 @@
   margin-top: 16px;
   padding: 8px 16px;
   background: white;
+  box-sizing: border-box;
+  width: 100%;
 }
 .patient-message{
   display: flex;
@@ -45,4 +47,9 @@
 }
 button{
   width: 50%;
+}
+.van-radio__label{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }

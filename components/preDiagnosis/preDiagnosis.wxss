@@ -5,7 +5,7 @@
   flex-direction: column;
   background: white;
   padding: 8px 16px;
-  margin: 8px;
+  margin-top: 8px;
 }
 .diagnosis-title{
   display: flex;

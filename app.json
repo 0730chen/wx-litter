@@ -11,7 +11,8 @@
     "pages/editorPatient/editorPatient",
     "pages/searchDoctor/searchDoctor",
     "pages/doctorDetail/doctorDetail",
-    "pages/preDiagnosis/preDiagnosis"
+    "pages/preDiagnosis/preDiagnosis",
+    "pages/inquiryForm/inquiryForm"
   ],
   "usingComponents": {
     "van-button": "@vant/weapp/button/index"

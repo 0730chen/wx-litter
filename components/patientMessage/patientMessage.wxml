@@ -1,35 +1,34 @@
 <!--components/patientMessage/patientMessage.wxml-->
 <view  bindtap="selectPatient">
-
-<view class="patients"> 
-<view class="patient-message">
-
-<image src="../../pages/image/avator.png" class="avator"></image>
-<view class="message">
-
-<view class="message-title">{{patientMessage.userName}}</view>
-<view class="message-content">
-{{patientMessage.age}}岁
-{{gender[patientMessage.gender]}}
-</view>
-
-</view>
-<view class="right-icon">
-切换患者<image src="../../pages/image/right.png" class="right"></image>
-</view>
-</view>
-</view>
-<view class="date-section">
-<view class="section">
-<view>预约时间</view>
-  <picker mode="date"  value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-    <view class="picker">
-    {{date}}
+  <view class="patients"> 
+    <view class="patient-message">
+      <image src="../../pages/image/avator.png" class="avator"></image>
+        <view class="message">
+          <view class="message-title">{{patientMessage.userName}}</view>
+            <view class="message-content">{{patientMessage.age}}岁{{gender[patientMessage.gender]}}
+            </view>
+          </view>
+        <view class="right-icon" bindtap="changePatient">
+          切换患者
+        <image src="../../pages/image/right.png" class="right"></image>
+        </view>
+      </view>
     </view>
-  </picker>
-      <view class="right-icon">
-    <image src="../../pages/image/right.png" class="right"></image>
-  </view>
-  </view>
-</view>
+
+    <view class="date-section">
+      <view class="section">
+        <view>预约时间</view>
+          <picker mode="date"  value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            {{date}}
+          </view>
+          </picker>
+        <view class="right-icon">
+          <image src="../../pages/image/right.png" class="right"></image>
+        </view>
+      </view>
+    </view>
+    <view>
+    
+    </view>
 </view>

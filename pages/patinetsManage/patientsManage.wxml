@@ -1,20 +1,37 @@
 <!--pages/patinetsManage/patientsManage.wxml-->
 <view class="patients-wrap">
-<view class="title">就诊人信息</view>
-<view wx:for="{{patientsList}}" wx:for-item="patients"wx:key="key" data-index="{{index}}"  bindtap="editorPatient">
-<view class="patients"> 
-<view class="patient-message">
-<image src="../image/avator.png" class="avator"></image>
-<view class="message">
-<view class="message-title">{{patients.userName}}</view>
-<view class="message-content">
-{{patients.age}}岁
-{{gender[patients.gender]}}
-</view>
-</view>
-</view>
-<image src="../image/editor.png" class="editor"></image>
-</view>
-</view>
+    <view class="title">{{title}}</view>
+    <van-radio-group value="{{ radio }}" bind:change="onChange" wx:if="{{status}}">
+        <view class="patients"  wx:for="{{patientsList}}" wx:for-item="patients"wx:key="key" data-index="{{index}}" label-disabled> 
+         <van-radio name="{{index}}" style="width:100%">
+          <view class="patient-message">
+            <image src="../image/avator.png" class="avator"></image>
+            <view class="message">
+              <view class="message-title">{{patients.userName}}</view>
+              <view class="message-content">
+                {{patients.age}}岁
+                {{gender[patients.gender]}}
+              </view>
+            </view>
+          </view>
+          <!-- <image src="../image/editor.png" class="editor"  bindtap="editorPatient" ></image> -->
+          </van-radio>
+        </view>
+    </van-radio-group>
+    <view wx:for="{{patientsList}}" wx:for-item="patients" wx:key="key" data-index="{{index}}" wx:if="{{!status}}">
+      <view class="patients"> 
+        <view class="patient-message">
+          <image src="../image/avator.png" class="avator"></image>
+            <view class="message">
+              <view class="message-title">{{patients.userName}}</view>
+                <view class="message-content">
+                  {{patients.age}}岁
+                  {{gender[patients.gender]}}
+                </view>
+              </view>
+            </view>
+            <image src="../image/editor.png" class="editor" bindtap="editorPatient"></image>
+          </view>
+        </view>
 <button type="default" class="save-message" bindtap="addPatient">添加患者</button>
 </view>

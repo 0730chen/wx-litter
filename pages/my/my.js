@@ -49,12 +49,6 @@ Page({
     return
   }
   },
-  //点击进入就诊人管理页面
-  managePatients(){
-    wx.navigateTo({
-      url: '../patinetsManage/patientsManage',
-    })
-  },
   //获取用户登陆信息
   bindGetUserInfo(){
     wx.getUserInfo({
