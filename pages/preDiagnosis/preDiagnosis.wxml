@@ -1,5 +1,20 @@
 <!--pages/preDiagnosis/preDiagnosis.wxml-->
 <view>
 <pre-form patientMessage="{{patientMessage}}"></pre-form>
-    <button class="mini-btn" type="primary">提交</button>
+    <view class="input-disease">
+        <view class="title">病症描述</view>
+        <van-cell-group>
+            <van-field
+            type="textarea"
+            model:value="{{ value }}"
+            placeholder="请输入症状描述"
+            show-word-limit
+            maxlength="150"
+            bind:change="onChange"
+                />
+        </van-cell-group>
+    </view>
+    <view class="submit">
+        <button class="mini-btn" type="primary">提交</button>
+    </view>
 </view>

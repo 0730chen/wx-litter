@@ -48,7 +48,7 @@
 </block>
 
 <block wx:if="{{patient.status===0}}">
-<view class="right">
+<view class="right" bindtap="rewritePre">
 修改预诊
 </view>
 </block>

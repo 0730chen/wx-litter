@@ -1,1 +1,11 @@
 /* pages/preDiagnosis/preDiagnosis.wxss */
+.input-disease{
+  background-color: white;
+}
+.title{
+  padding: 8px;
+  background: burlywood;
+}
+.submit{
+  margin-top: 32px;
+}

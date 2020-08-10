@@ -52,6 +52,7 @@
   margin-top: 8px;
 }
 .address{
+  font-size: 14pt;
   margin-top: 8px;
 }
 .service{

@@ -2,6 +2,8 @@
   "component": true,
   "navigationBarTitleText": "预诊信息",
   "usingComponents": {
-    "pre-form":"../../components/preDiagnosisForm/preDiagnosisForm"
+    "pre-form":"../../components/preDiagnosisForm/preDiagnosisForm",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-field": "@vant/weapp/field/index"
   }
 }

@@ -21,6 +21,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
+
+    //修改预诊
+    rewritePre(){
+      wx.navigateTo({
+        url: '../../pages/preDiagnosis/preDiagnosis',
+      })
+    },
       //取消预诊
   cancelPre(){
     let that = this

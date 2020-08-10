@@ -5,6 +5,7 @@ Component({
    */
   properties: {
     name:String,
+    status:Number
   },
 
   /**
@@ -27,9 +28,16 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    //跳转医生详情
+    doctorDetail(){
+      wx.navigateTo({
+        url: '../doctorDetail/doctorDetail',
+      })
+    },
     onLoad:()=>{
       console.log(this.data)
     },
+    //预诊
     preDiagnosis(e){
       console.log(e)
       wx.navigateTo({

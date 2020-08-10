@@ -1,36 +1,35 @@
 <!--components/doctorMessage/doctorMessage.wxml-->
 <view class="doctor-list">
- <van-panel use-footer-slot >
- <view class="doctor-message">
-    <van-image
-  round
-  width="64px"
-  height="64px"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
-/>
-<view class="detail-message">
-<view class="detail-title">
-<view class="detail-title-name">
-<text class="user-name">{{name}}</text><text class="position">副主任</text>
-</view>
-<van-cell title="萧山天人大厦" icon="location-o" border="{{false}}"/>
-</view>
-</view>
-<van-icon name="phone" color="#CCC" size='20px'/>
- </view>
-<view>
-<view class="good-at">擅长:中医</view>
-</view>
-  <view slot="footer" class="op">
-  <view class="forward" hover-class="active" bindtap="onOpen">转发</view>
-  <view class="diagnosis" hover-class="active" bindtap="preDiagnosis">预诊</view>
+  <van-panel use-footer-slot >
+    <view class="doctor-message" bindtap="doctorDetail">
+      <van-image
+        round
+        width="64px"
+        height="64px"
+        src="https://img.yzcdn.cn/vant/cat.jpeg"
+      />
+      <view class="detail-message">
+        <view class="detail-title">
+          <view class="detail-title-name">
+             <text class="user-name">{{name}}</text><text class="position">副主任</text>
+          </view>
+          <van-cell title="萧山天人大厦" icon="location-o" border="{{false}}"/>
+        </view>
+      </view>
+      <van-icon name="phone" color="#CCC" size='20px'/>
+    </view>
+  <view wx:if="{{status===1}}">
+    <view class="good-at">擅长:中医</view>
   </view>
-  <van-action-sheet
-  show="{{ show }}"
-  actions="{{ actions }}"
-  cancel-text="取消"
-  bind:close="onClose"
-  bind:select="onSelect"
-  />
+    <view slot="footer" class="op" wx:if="{{status===1}}">
+      <view class="forward" hover-class="active" bindtap="onOpen">转发</view>
+        <view class="diagnosis" hover-class="active" bindtap="preDiagnosis">预诊</view>
+        </view>
+      <van-action-sheet
+        show="{{ show }}"
+        actions="{{ actions }}"
+        cancel-text="取消"
+        bind:close="onClose"
+        bind:select="onSelect"/>
 </van-panel>
 </view>

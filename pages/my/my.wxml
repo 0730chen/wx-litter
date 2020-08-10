@@ -1,46 +1,47 @@
 <view class="message-wrap">
-<view class="message" bindtap="editorMessage" hover-class="hover-button">
-<view class="use-avator"> 
-<block wx:if="{{login}}">
-<!-- <open-data type="userAvatarUrl" class="avator"></open-data>
-<view class="user-message">  
-<open-data type="userNickName"></open-data>
-<open-data type="userGender" lang="zh_CN"></open-data> -->
-<van-image
-  round
-  width="32px"
-  height="32px"
-  src="https://img.yzcdn.cn/vant/cat.jpeg"
-/>
-<block wx:if="{{userName}}">
-<view class="user-message">
-<text class="userName">{{userName?userName:message.userName}}</text>
-<text class="gender">{{gender?genderType[gender]:genderType[message.gender]}}</text>
-</view>
-</block>
-<block wx:else>
-请完善个人信息
-</block>
-<!-- </view> -->
-</block>
-<block wx:else>
-<image src="../image/avator.png" class="avator"></image>
-</block>
+
+  <view class="message" bindtap="editorMessage" hover-class="hover-button">
+    <view class="use-avator"> 
+      <block wx:if="{{login}}">
+        <van-image
+          round
+          width="32px"
+          height="32px"
+          src="https://img.yzcdn.cn/vant/cat.jpeg"
+        />
+      <block wx:if="{{userName}}">
+        <view class="user-message">
+          <text class="userName">{{userName?userName:message.userName}}</text>
+          <text class="gender">{{gender?genderType[gender]:genderType[message.gender]}}</text>
+        </view>
+      </block>
+      <block wx:else>
+        请完善个人信息
+      </block>
+      </block>
+
+    <block wx:else>
+      <image src="../image/avator.png" class="avator"></image>
+    </block>
 </view>
 <!-- 需要使用 button 来授权登录 -->
 <block wx:if="{{!login}}">
-<view wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap="login">授权登录</view>
+    <view wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap="login">授权登录</view>
 </block>
-<image src="../image/right.png" class="right"></image>
+    <image src="../image/right.png" class="right"></image>
 </view>
+
 <view class="patient-manage">
-<van-cell title="患者管理" is-link link-type="navigateTo" url="/pages/patinetsManage/patientsManage"/>
+  <van-cell title="患者管理" is-link link-type="navigateTo" url="/pages/patinetsManage/patientsManage" size="large"/>
 </view>
+
 <view class="address">
-<van-cell title="地址管理" is-link />
+  <van-cell title="地址管理" is-link size="large" />
 </view>
+
 <view class="service">
-<van-cell title="服务协议" is-link />
+  <van-cell title="服务协议" is-link  size="large"/>
 </view>
+
 <view class="statement">-由井颐健康提供服务-</view>
 </view>
