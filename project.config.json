@@ -74,8 +74,8 @@
 				},
 				{
 					"id": 1,
-					"name": "pages/inquiryForm/inquiryForm",
-					"pathName": "pages/inquiryForm/inquiryForm",
+					"name": "pages/treatmentBack/treatmentBack",
+					"pathName": "pages/treatmentBack/treatmentBack",
 					"query": "",
 					"scene": null
 				}

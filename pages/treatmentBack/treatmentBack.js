@@ -1,32 +1,46 @@
-// pages/inquiryForm/inquiryForm.js
-
-const questionList = require('./question')
+// pages/treatmentBack/treatmentBack.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    result: ['a', 'b'],
-    questionList:questionList
+    value: '',
   },
 
   /*
-  选择值变化
-  */
- onChange(event) {
-   let index = event.currentTarget.dataset.index
-   let value = event.detail
-   let newQuestion = questionList.map((e,i)=>{
-     if(i===index){
-       e.value = value
-     }
-     return e
-   })
-   this.setData({
-     questionList:newQuestion
-   })
-},
+  
+  * */
+ bodyChnage(event){
+   console.log(event)
+   let garderType = {
+     10:'不适',
+     20:'一般',
+     30:'好',
+     40:'非常好'
+   }
+   if(event.detail){
+       wx.showToast({
+      icon: 'none',
+      title: `当前值：${garderType[event.detail]}`,
+    });
+  }
+ },
+ otherChange(event){
+  let garderType = {
+    10:'加重',
+    20:'无变化',
+    30:'改善',
+    40:'明显改善',
+    50:'痊愈'
+  }
+  if(event.detail){
+      wx.showToast({
+     icon: 'none',
+     title: `当前值：${garderType[event.detail]}`,
+   });
+ }
+ },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -38,6 +52,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+
   },
 
   /**

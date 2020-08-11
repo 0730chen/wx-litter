@@ -33,10 +33,10 @@
 <text class="doctor-name">王医生</text>
 <text class="doctor-position">副主任医生</text>
 </view>
-<view class="operating">
+<view class="operating" wx:if="{{status}}">
 <view class="op">调理建议</view>
 <view class="op">开始复诊</view>
-<view class="right">疗程反馈</view>
+<view class="right" bindtap="treatmentBack">疗程反馈</view>
 </view>
 
 </view>

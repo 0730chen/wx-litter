@@ -12,7 +12,8 @@
     "pages/searchDoctor/searchDoctor",
     "pages/doctorDetail/doctorDetail",
     "pages/preDiagnosis/preDiagnosis",
-    "pages/inquiryForm/inquiryForm"
+    "pages/inquiryForm/inquiryForm",
+    "pages/treatmentBack/treatmentBack"
   ],
   "usingComponents": {
     "van-button": "@vant/weapp/button/index"

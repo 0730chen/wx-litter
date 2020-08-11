@@ -27,7 +27,7 @@
 <van-cell wx:for="{{doctorList}}"  is-link  wx:key="index" class="doctor" title="{{item.title}}" hover-class="hover-button" data-index="{{index}}">
 </van-cell>
 </van-cell-group> -->
-<medical-record wx:for="{{doctorList}}"  is-link  wx:key="index" class="doctor"></medical-record>
+<medical-record wx:for="{{doctorList}}"  is-link  status="true" wx:key="index" class="doctor"></medical-record>
 </block>
 <block wx:else>
 <view class="no-doctor">

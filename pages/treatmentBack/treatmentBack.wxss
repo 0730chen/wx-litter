@@ -1,0 +1,46 @@
+/* pages/treatmentBack/treatmentBack.wxss */
+.treatment-wrap{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.slider{
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.grade{
+  padding: 8px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+}
+.treatment-container{
+  flex: 1;
+}
+.overflow-text{
+  max-width: 48px;
+  text-align: center;
+}
+.submit{
+  text-align: center;
+}
+.grade-list{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.grade-title{
+  width: 40%;
+}
+.treatment-title{
+  width: 25%;
+}
+
+van-slider{
+  flex: 1;
+  padding:8px 8px 8px 16px;
+}
