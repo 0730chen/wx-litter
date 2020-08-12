@@ -13,7 +13,8 @@
     "pages/doctorDetail/doctorDetail",
     "pages/preDiagnosis/preDiagnosis",
     "pages/inquiryForm/inquiryForm",
-    "pages/treatmentBack/treatmentBack"
+    "pages/treatmentBack/treatmentBack",
+    "pages/recordDetails/recordDetails"
   ],
   "usingComponents": {
     "van-button": "@vant/weapp/button/index"

@@ -22,6 +22,16 @@ Component({
       wx.navigateTo({
         url: '../../pages/treatmentBack/treatmentBack',
       })
-    }
-  }
+    },
+    rePre(){
+    wx.navigateTo({
+      url: '../../pages/preDiagnosis/preDiagnosis',
+    })
+  },
+  recordDeatils(){
+    wx.navigateTo({
+      url: '../../pages/recordDetails/recordDetails',
+    })
+  },
+}
 })

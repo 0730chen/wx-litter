@@ -1,0 +1,63 @@
+<!--pages/recordDetails/recordDetails.wxml-->
+<view class="record-details">
+  <view class="record-wrap">
+    <van-tabs bind:click="onClick" line-height='0' animated  sticky>
+      <van-tab title="病历描述">
+        <view>
+          <medical-record ></medical-record>
+        </view>
+        <view class="basic-message">
+          <view class="message-title">基本信息</view>
+          <view class="basic-message-container">
+            <view wx:for="{{ basicMessage}}" wx:key="idnex" class="item">
+            <view class="item-title">{{item.title}}：</view>
+            <view>{{item.result}}</view>
+            </view>
+          </view>
+
+          <view class="disease-message">
+            <view class="message-title">
+              疾病诊断
+            </view>
+            <view class="disease-container">
+              <view wx:for="{{diseaseList}}" wx:key="index" class="item">
+                <view class="item-title">{{item.title}}：</view>
+                <view>{{item.result}}</view>
+              </view>
+            </view>
+          </view>
+
+          <view class="treatment">
+            <view class="message-title">
+              治疗方案
+            </view>
+            <view class="treatment-container">
+              <view class="item">
+                <view class="item-title">{{treatment.title}}：</view>
+                <view>{{treatment.result}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+      <van-tab title="调理建议">
+         <view>
+          <medical-record></medical-record>
+        </view>
+        <view class="cold-hot" wx:for="{{condition}}" wx:key="index">
+          <view class="message-title">
+            {{item.title}}
+          </view>
+          <view wx:for="{{item.result}}" wx:key="index" class="condition-item">
+            <view class="status" class="{{item.status==='宜'?'sh':'not'}}">{{item.status}}</view>
+            <view>{{item.result}}</view>
+          </view>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+  <view class="submit">
+    <view class="follow" hover-class="active" bindtap="rewrite">开启复诊</view>
+    <view class="feedback" hover-class="active" bindtap="treatment">疗程反馈</view>
+  </view>
+</view>

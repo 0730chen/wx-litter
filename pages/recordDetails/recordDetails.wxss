@@ -1,0 +1,68 @@
+/* pages/recordDetails/recordDetails.wxss */
+.record-details{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.record-wrap{
+  flex: 1;
+  overflow: auto;
+  padding-bottom: 16px;
+}
+.submit{
+  background: white;
+  display: flex;
+}
+.follow{
+  text-align: center;
+  width: 50%;
+  color: rgb(168, 168, 168);
+  padding: 8px 16px;
+  line-height: 1.5;
+}
+.feedback{
+  text-align: center;
+  width: 50%;
+  padding: 8px 16px;
+  line-height: 1.5;
+  background: rgb(0, 223, 140);
+  color: white;
+}
+.van-tab--active{
+  font-size: 16px !important;
+  color:  rgb(0, 223, 140) !important;
+}
+.active{
+  background: rgb(222, 222, 222);
+}
+.message-title{
+  padding: 16px 16px 8px 16px;
+  color: rgb(28, 87, 165)
+}
+.item{
+  padding: 8px 16px;
+  display: flex;
+  background: white;
+  border-bottom: 1px solid rgb(248, 248, 248);
+}
+.item-title{
+  width: 30%;
+}
+.condition-item{
+  display: flex;
+  padding: 8px 16px;
+  background: white;
+}
+.status{
+  width: 10%;
+}
+.sh{
+  width: 10%;
+  color:  rgb(0, 223, 140)
+}
+.not{
+  width: 10%;
+  color: rgb(255, 96, 156);
+}

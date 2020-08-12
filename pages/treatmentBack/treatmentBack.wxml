@@ -43,7 +43,7 @@
     </view>
     <view>
       <view class="title">
-        <view>补充反馈</view>
+        <view class="question-title">补充反馈</view>
       </view>
       <view>
          <van-field model:value="{{ value }}" placeholder="请输入你的症状和疗效反馈" border="{{ false }}"/>
@@ -51,6 +51,6 @@
     </view>
   </view>
   <view class="submit">
-    <van-button type="primary">主要按钮</van-button>
+    <button  type="primary">提交</button>
   </view>
 </view>

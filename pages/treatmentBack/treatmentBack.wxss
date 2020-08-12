@@ -4,6 +4,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .slider{
   padding: 8px;
@@ -19,6 +20,7 @@
 }
 .treatment-container{
   flex: 1;
+  overflow: auto;
 }
 .overflow-text{
   max-width: 48px;
@@ -26,6 +28,12 @@
 }
 .submit{
   text-align: center;
+  width: 50%;
+  padding: 16px 8 ;
+  margin: 0 auto;
+}
+button{
+  background: rgb(0, 223, 104);
 }
 .grade-list{
   flex: 1;
@@ -43,4 +51,7 @@
 van-slider{
   flex: 1;
   padding:8px 8px 8px 16px;
+}
+.question-title{
+  padding: 8px;
 }

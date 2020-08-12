@@ -1,5 +1,5 @@
 <!--components/medicalRecord/medicalRecord.wxml-->
-<view class="record-wrap">
+<view class="record-wrap" bindtap="recordDeatils">
 <view class="record-ttile">
 <van-image
   round
@@ -34,8 +34,8 @@
 <text class="doctor-position">副主任医生</text>
 </view>
 <view class="operating" wx:if="{{status}}">
-<view class="op">调理建议</view>
-<view class="op">开始复诊</view>
+<view class="op" bindtap="recordDeatils">调理建议</view>
+<view class="op" bindtap="rePre">开始复诊</view>
 <view class="right" bindtap="treatmentBack">疗程反馈</view>
 </view>
 

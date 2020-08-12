@@ -1,5 +1,5 @@
 <!--components/preDiagnosis/preDiagnosis.wxml-->
-<view class="diagnosis-card">
+<view class="diagnosis-card" bindtap="rewritePre">
 <view class="diagnosis-title">
 <van-image
   round
@@ -42,7 +42,7 @@
 </view>
 </block>
 <block wx:else>
-<view class="op">
+<view class="op" bindtap="rePre">
 开启复诊
 </view>
 </block>
@@ -53,7 +53,7 @@
 </view>
 </block>
 <block wx:else>
-<view class="right">
+<view class="right" bindtap="findRecord">
 查看病历
 </view>
 </block>

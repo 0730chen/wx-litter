@@ -28,6 +28,18 @@ Component({
         url: '../../pages/preDiagnosis/preDiagnosis',
       })
     },
+    //查看病历
+    findRecord(){
+      wx.navigateTo({
+        url: '../../pages/recordDetails/recordDetails',
+      })
+    },
+    //复诊
+    rePre(){
+      wx.navigateTo({
+        url: '../../pages/preDiagnosis/preDiagnosis',
+      })
+    },
       //取消预诊
   cancelPre(){
     let that = this
