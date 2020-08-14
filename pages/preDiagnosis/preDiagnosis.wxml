@@ -37,6 +37,6 @@
         </view>
   </view>
     <view class="submit">
-        <button class="mini-btn" type="primary">提交</button>
+        <button type="primary">提交</button>
     </view>
 </view>

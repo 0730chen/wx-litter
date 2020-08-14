@@ -16,6 +16,18 @@ Page({
       {title:'病历一'}
     ]
   },
+  //预诊状态
+  preStatus(e){
+    let newPatientList = this.data.patientList.map(item=>{
+      if(e.detail.name===item.userName){
+        item = Object.assign({},e.detail)
+      }
+      return item
+    })
+    this.setData({
+      patientList:newPatientList
+    })
+  },
   //切换预约和病历
   changeActive(e){
     let index = parseInt(e.target.dataset.index)

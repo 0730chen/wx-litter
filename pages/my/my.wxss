@@ -73,6 +73,9 @@
   display: flex;
   align-items: center;
 }
+.login{
+  border: none;
+}
 @media (min-width: 480px) {
   /* 仅在 480px 或更宽的屏幕上生效的样式规则 */
   .my-class {

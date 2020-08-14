@@ -1,6 +1,6 @@
 <!--components/preDiagnosis/preDiagnosis.wxml-->
-<view class="diagnosis-card" bindtap="rewritePre">
-<view class="diagnosis-title">
+<view class="diagnosis-card">
+<view class="diagnosis-title" bindtap="rewritePre">
 <van-image
   round
   width="64px"
@@ -34,27 +34,36 @@
 </view>
 
 <view class="operating">
-<view class="op">
+<view class="op" wx:if="patient.status===3">
+  </view>
+    <block wx:if="{{patient.status===0}}">
+      <view data-id="" class="cancle" bindtap="cancelPre">
+          取消预诊
+      </view>
+    </block>
+<block wx:if="{{patient.status===1}}">
+    <view class="re-pre" bindtap="rePre">
+    开启复诊
 </view>
-<block wx:if="{{patient.status===0}}">
-<view class="op" bindtap="cancelPre">
-取消预诊
-</view>
-</block>
-<block wx:else>
-<view class="op" bindtap="rePre">
-开启复诊
-</view>
-</block>
 
+</block>
 <block wx:if="{{patient.status===0}}">
 <view class="right" bindtap="rewritePre">
 修改预诊
 </view>
 </block>
 <block wx:else>
-<view class="right" bindtap="findRecord">
-查看病历
+<view class="right">
+  <block wx:if="{{patient.status===3}}">
+    <view class="delete" bindtap="deletePreRecord">
+      删除记录
+    </view>
+  </block>
+  <block wx:else>
+    <view bindtap="findRecord">
+      查看病历
+    </view>
+  </block>
 </view>
 </block>
 </view>
@@ -63,9 +72,14 @@
 待就诊
 </view>
 </block>
-<block wx:else>
+<block wx:if="{{patient.status===1}}">
 <view class="status2">
 已就诊
+</view>
+</block>
+<block wx:if="{{patient.status===3}}">
+<view class="status3">
+已取消
 </view>
 </block>
 <van-dialog id="van-dialog"/>

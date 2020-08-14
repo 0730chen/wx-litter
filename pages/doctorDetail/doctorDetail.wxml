@@ -44,7 +44,7 @@
 <text>通话</text>
 </view>
 <view class="button">
-<text>预约</text>
+<text bindtap="reservation">预约</text>
 </view>
 </view>
 </view>

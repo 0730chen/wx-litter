@@ -1,0 +1,62 @@
+<!--pages/addressEdit/addressEdit.wxml-->
+<view class="address-wrap">
+  <van-cell-group>
+  <van-field
+    value="{{ username }}"
+    label="姓名"
+    placeholder="收货人姓名"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ password }}"
+    label="电话"
+    placeholder="收货人电话号"
+    border="{{ false }}"
+  />
+  <view bindtap="showPopup">
+      <van-field  label="地区" value="{{address?address:'请选择收货地址'}}" is-link  readonly/>
+  </view>
+  <van-popup show="{{ show }}" bind:close="onClose"  position="bottom">
+      <van-area
+    area-list="{{ areaList }}"
+    columns-placeholder="{{ ['请选择', '请选择', '请选择'] }}"
+    title="地区"
+    bind:confirm="confirmAddress"
+  />
+  </van-popup>
+
+    <van-field
+    value="{{ username }}"
+    label="详细地址"
+    placeholder="收货人详细地址"
+    bind:click-icon="onClickIcon"
+  />
+
+  <van-field
+    value="{{ password }}"
+    label="邮政编码"
+    placeholder="邮政编码"
+    border="{{ false }}"
+  />
+
+  <view class="default">
+    <van-cell center title="设置为默认地址">
+      <van-switch checked="{{ checked }}" bind:change="onChange" />
+      </van-cell>
+    </view>
+
+    <view class="operating">
+    <view class="save">
+      <van-button class="save" type="info" block round bind:click="saveAddress">保存</van-button>
+    </view>
+      <view  class="delete">
+        <van-button  class="delete" type="warning" block round  bind:click="deleteAddress">删除</van-button>
+      </view> 
+    </view>
+</van-cell-group>
+
+<van-toast id="van-toast" />
+
+<van-dialog id="van-dialog" />
+</view>

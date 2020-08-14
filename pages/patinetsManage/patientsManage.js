@@ -23,9 +23,23 @@ Page({
     }
   },
   onChange(event) {
+    //当前页面
+    let pages = getCurrentPages()
+    //上一页
+    let prePage = pages[pages.length-2]
+    prePage.setData({
+      patientMessage:{
+        userName:'哈哈'
+      }
+    })
+    console.log(event.detail)
     this.setData({
       radio: event.detail,
     });
+    wx.navigateBack({
+      delta: 1,
+    })
+    console.log(event)
   },
 
   //编辑患者信息

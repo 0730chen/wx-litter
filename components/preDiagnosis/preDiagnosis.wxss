@@ -70,18 +70,40 @@
   color: white;
   padding: 0 8px;
 }
+.status3{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background:rgb(178, 178, 178);
+  color: white;
+  padding: 0 8px;
+}
 .operating{
   display: flex;
   flex-direction: row;
   padding: 8px ;
+  justify-content: space-between;
+}
+.re-pre{
+  width: 33.3%;
+  text-align: center;
+  border-left:1px solid #ccc ;
+}
+.cancle{
+  width: 33.3%;
+  text-align: center;
+  border-left:1px solid #ccc ;
 }
 .op{
   width: 33.3%;
   text-align: center;
-  border-right:1px solid #ccc ;
 }
 .right{
   width: 33.3%;
   text-align: center;
+  border-left:1px solid #ccc ;
   color: rgb(28, 87, 165)
+}
+.delete{
+  color: black;
 }

@@ -14,6 +14,8 @@ Page({
       { loading: true },
       { name: '禁用选项', disabled: true },
     ],
+    //是否是修改预诊还是提交预诊
+    changeStatus:false
   },
   /*
   跳转到问诊选择页面 
@@ -66,7 +68,9 @@ afterRead(event){
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if(options.key){
 
+    }
   },
 
   /**

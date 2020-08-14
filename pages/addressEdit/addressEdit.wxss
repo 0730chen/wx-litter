@@ -1,0 +1,15 @@
+/* pages/addressEdit/addressEdit.wxss */
+.default{
+  margin-top: 16px;
+}
+.operating{
+  margin-top: 16px;
+}
+.save{
+  margin:8px auto;
+  width: 60%;
+}
+.delete{
+  margin: 16px auto;
+  width: 60%;
+}

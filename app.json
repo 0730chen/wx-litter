@@ -14,7 +14,9 @@
     "pages/preDiagnosis/preDiagnosis",
     "pages/inquiryForm/inquiryForm",
     "pages/treatmentBack/treatmentBack",
-    "pages/recordDetails/recordDetails"
+    "pages/recordDetails/recordDetails",
+    "pages/addressManage/addressManage",
+    "pages/addressEdit/addressEdit"
   ],
   "usingComponents": {
     "van-button": "@vant/weapp/button/index"

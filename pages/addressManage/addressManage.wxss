@@ -1,0 +1,17 @@
+/* pages/addressManage/addressManage.wxss */
+.address-manage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.title{
+  padding: 16px;
+}
+.address-container{
+  flex: 1;
+}
+.operat{
+  margin: 16px auto;
+}

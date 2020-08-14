@@ -7,9 +7,8 @@
 <block wx:if="{{active===1}}">
 <view class="patient-list">
 <block wx:if="{{patientList.length>0}}">
-<!-- <van-cell wx:for="{{patientList}}" wx:key="index" wx:for-item="patient" title="{{patient.title}}" is-link  class="patient" hover-class="hover-button" bindtap="onPatient" data-index="{{index}}">
-</van-cell> -->
-<pre-diagnosis wx:for="{{patientList}}" wx:key="index" wx:for-item="patient"  patient="{{patient}}" name="{{patient.title}}"></pre-diagnosis>
+
+<pre-diagnosis wx:for="{{patientList}}" wx:key="index" wx:for-item="patient"  patient="{{patient}}" name="{{patient.title}}" bindstatus="preStatus"></pre-diagnosis>
 <view class="no-more">没有更多了</view>
 </block>
 <block wx:else>

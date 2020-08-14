@@ -51,6 +51,7 @@ Page({
   },
   //获取用户登陆信息
   bindGetUserInfo(){
+    console.log(111)
     wx.getUserInfo({
       success:res=>{
         console.log(res)
@@ -67,7 +68,9 @@ Page({
     name.sayHello('我在加载')
     wx.getSetting({
       success:res=>{
+        console.log('111')
         if (res.authSetting['scope.userInfo']) {
+          console.log('111')
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
             success: res=> {
@@ -81,6 +84,7 @@ Page({
             }
           })
         }else{
+          console.log('没有授权')
           this.setData({
             login:false
           })
@@ -135,5 +139,8 @@ Page({
       })
     },
     login(){
+    },
+    login(){
+      console.log(11)
     }
 })

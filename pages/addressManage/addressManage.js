@@ -1,19 +1,39 @@
-// pages/doctorDetail/doctorDetail.js
+// pages/addressManage/addressManage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    //关注颜色
-    attentionColor:'#ccc'
+    addressList:[
+    ]
   },
 
+  //添加收货地址
+  addAddress(){
+    wx.navigateTo({
+      url: '../../pages/addressEdit/addressEdit',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 获取微信中的收获地址
+    let addressMessage = {}
+    wx.chooseAddress({
+      success:(res)=>{
+        res.addressMessage = res.provinceName+res.cityName+res.countyName+res.detailInfo
+        addressMessage =  Object.assign({},res)
+        console.log(res)
+        console.log(addressMessage)
+        let newArray = []
+        newArray.push(addressMessage)
+        this.setData({
+          addressList:newArray
+        })
+      }
+    })
   },
 
   /**
@@ -63,16 +83,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  addAttention(){
-    this.setData({
-      attentionColor:'rgb(255,210,30)'
-    })
-  },
-  //预约表单
-  reservation(){
-    wx.navigateTo({
-      url: '../../pages/preDiagnosis/preDiagnosis',
-    })
   }
 })

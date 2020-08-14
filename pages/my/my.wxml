@@ -5,8 +5,8 @@
       <block wx:if="{{login}}">
         <van-image
           round
-          width="32px"
-          height="32px"
+          width="64px"
+          height="64px"
           src="https://img.yzcdn.cn/vant/cat.jpeg"
         />
       <block wx:if="{{userName}}">
@@ -26,7 +26,7 @@
 </view>
 <!-- 需要使用 button 来授权登录 -->
 <block wx:if="{{!login}}">
-    <view wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap="login">授权登录</view>
+    <button class="login" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" bindtap="login">授权登录</button>
 </block>
     <image src="../image/right.png" class="right"></image>
 </view>
@@ -36,7 +36,7 @@
 </view>
 
 <view class="address">
-  <van-cell title="地址管理" is-link size="large" />
+  <van-cell title="地址管理" is-link size="large"  link-type="navigateTo" url="/pages/addressManage/addressManage"/>
 </view>
 
 <view class="service">

@@ -3,6 +3,8 @@
     "medical-record":"../../components/medicalRecord/medicalRecord",
     "van-slider": "@vant/weapp/slider/index",
     "van-button": "@vant/weapp/button/index",
-    "van-field": "@vant/weapp/field/index"
+    "van-field": "@vant/weapp/field/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
   }
 }

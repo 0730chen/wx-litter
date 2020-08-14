@@ -1,5 +1,6 @@
 {
   "component": true,
+  "navigationBarTitleText": "预诊信息",
   "usingComponents": {
     "doctor-message":"../../components/doctorMessage/doctorMessage",
     "patient-card":"../../components/patientMessage/patientMessage"

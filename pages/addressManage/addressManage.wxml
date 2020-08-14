@@ -1,0 +1,18 @@
+<!--pages/addressManage/addressManage.wxml-->
+<view class="address-manage">
+
+  <view class='title'>地址管理页面</view>
+
+  <view class="address-container">
+  
+  <van-cell-group title="收货地址">
+    <van-cell wx:for="{{addressList}}" center title="{{item.userName}}" value="编辑" label="{{item.addressMessage}}" >
+      <van-icon slot="right-icon" name="edit" class="custom-icon" />
+    </van-cell>
+  </van-cell-group>
+  </view>
+
+  <view class="operat">
+    <van-button icon="plus" type="primary" bindtap="addAddress">收货地址</van-button>
+  </view>
+</view>

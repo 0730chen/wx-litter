@@ -1,8 +1,10 @@
 <!--pages/treatmentBack/treatmentBack.wxml-->
 <view class="treatment-wrap">
 
-  <view class="treatment-container">
-    <medical-record ></medical-record>
+<van-tabs  bind:click="onClick" line-height='0' animated  sticky>
+  <van-tab title="追加反馈">
+    <view class="treatment-container">
+    <medical-record></medical-record>
     <view class="body">
       <view class="title">
         <view class="question-title">全身舒适度</view>
@@ -20,7 +22,6 @@
           <van-slider value="0" step="10" max="40" bind:change="bodyChnage"/>
         </view>
       </view>
-
     </view>
     <view class="other">
       <view class="title">
@@ -45,12 +46,19 @@
       <view class="title">
         <view class="question-title">补充反馈</view>
       </view>
-      <view>
-         <van-field model:value="{{ value }}" placeholder="请输入你的症状和疗效反馈" border="{{ false }}"/>
+      <view class="output">
+         <van-field model:value="{{ value }}"  autosize type="textarea" placeholder="请输入你的症状和疗效反馈" border="{{ false }}"/>
       </view>
     </view>
   </view>
   <view class="submit">
-    <button  type="primary">提交</button>
+    <button type="primary" size="large">提交</button>
   </view>
+  
+  </van-tab>
+  <van-tab title="反馈记录">
+    <medical-record></medical-record>
+  </van-tab>
+</van-tabs>
+
 </view>

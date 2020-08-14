@@ -40,7 +40,6 @@
 }
 .photo-wrap{
   box-sizing: border-box;
-  padding: 8px;
 }
 .photo-action{
   margin: 8px ;

@@ -25,7 +25,7 @@ Component({
     //修改预诊
     rewritePre(){
       wx.navigateTo({
-        url: '../../pages/preDiagnosis/preDiagnosis',
+        url: '../../pages/preDiagnosis/preDiagnosis?key=rewrite',
       })
     },
     //查看病历
@@ -41,7 +41,7 @@ Component({
       })
     },
       //取消预诊
-  cancelPre(){
+  cancelPre(e){
     let that = this
     Dialog.default.confirm({
       context: that,
@@ -49,10 +49,32 @@ Component({
       message: '您是否取消这次预诊'
      }).then(() => {
       // on close
-      console.log(111)
       Toast.default.success({
         context:that,
         message:'取消成功',
+      });
+      let name = this.properties.patient.userName
+      var myEventDetail = {
+        name:name,
+        status:3
+      } // detail对象，提供给事件监听函数
+      this.triggerEvent('status', myEventDetail)
+     }).catch(()=>{
+       console.log(2)
+     })
+  },
+  //删除预诊记录
+  deletePreRecord(){
+    let that = this
+    Dialog.default.confirm({
+      context: that,
+      title: '',
+      message: '是否删除此次记录'
+     }).then(() => {
+      // on close
+      Toast.default.success({
+        context:that,
+        message:'删除成功',
       });
      }).catch(()=>{
        console.log(2)
