@@ -44,6 +44,8 @@ Page({
 
   //编辑患者信息
   editorPatient(e){
+    console.log(e)
+    console.log(e.currentTarget.dataset.index)
     let index = parseInt(e.currentTarget.dataset.index)
     console.log(index)
     wx.navigateTo({
@@ -54,6 +56,7 @@ Page({
         }
       },
       success:res=>{
+        console.log('调转')
         res.eventChannel.emit('patientMessage',this.data.patientsList[index])
       }
     })
@@ -106,7 +109,6 @@ Page({
           Object.assign(e,this.data.newPatient)
         }
       })
-      console.log(this.data.patientsList)
       this.setData({
         patientsList:this.data.patientsList
       })

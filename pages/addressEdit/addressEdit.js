@@ -8,20 +8,56 @@ Page({
    * 页面的初始数据
    */
   data: {
+    //页面默认新增
+    type:'add',
     areaList:area,
     show: false,
     address:'',
     checked: true,
+    userName:'',
+    mobilePhone:'',
+    area:'',
+    detail:'',
+    postalCode:'',
+   
   },
 
   //
   saveAddress(){
-    console.log(1)
+    let page = getCurrentPages()
+    console.log(page)
+    //获取上一页得数据
+    let prevPage = page[page.length-2]
+    console.log(prevPage)
+    let addressList = this.data.address.split('-')
+    console.log(addressList)
+    let obj ={
+      userName:this.data.userName,
+      telNumber:this.data.mobilePhone,
+      provinceName:addressList[0],
+      cityName:addressList[1],
+      countyName:addressList[2],
+      detailInfo:this.data.detail,
+      postalCode:this.data.postalCode,
+      addressMessage:addressList[0]+addressList[1]+addressList[2]+this.data.detail
+    }
     let that = this
-    Toast.default.success({
-      context:that,
-      message:'保存成功',
-    });
+    if(this.data.userName===''||this.data.mobilePhone===''||this.data.detail===''){
+      Toast.default.success({
+        context:that,
+        message:'请填写必填字段',
+      });
+    }else{
+      prevPage.data.newAddress = obj
+      prevPage.data.type = this.data.type
+      Toast.default.success({
+        context:that,
+        message:'保存成功',
+      });
+      wx.navigateBack({
+        delta: 1,
+      })
+    }
 
   },
   deleteAddress(){
@@ -55,7 +91,7 @@ Page({
     const addressMessage = ()=>{
       let str = ''
       addressDetail.detail.values.forEach(e=>{
-        str+=`${e.name}/`
+        str+=`${e.name}-`
       })
       
       return str.slice(0,str.length-2)
@@ -70,7 +106,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if(options.address){
+      let detail = JSON.parse(options.address)
+      let newAddress = Object.assign({},this.data.addressDetail)
+      newAddress.userName = detail.userName
+      newAddress.mobilePhone = detail.telNumber
+      newAddress.detail = detail.detailInfo
+      newAddress.postalCode = detail.postalCode
 
+      this.setData({
+        userName:detail.userName,
+        mobilePhone:detail.telNumber,
+        detail:detail.detailInfo,
+        postalCode: detail.postalCode,
+        type:'editor'
+      })
+      this.setData({
+        address:`${detail.provinceName}-${detail.cityName}-${detail.countyName}`
+      })
+    }
   },
 
   /**

@@ -18,19 +18,19 @@
           </van-radio>
         </view>
     </van-radio-group>
-    <view wx:for="{{patientsList}}" wx:for-item="patients" wx:key="key" data-index="{{index}}" wx:if="{{!status}}">
+    <view wx:for="{{patientsList}}" wx:for-item="patients" wx:key="key" data-index="{{index}}" wx:if="{{!status}}" bindtap="editorPatient">
       <view class="patients"> 
         <view class="patient-message">
           <image src="../image/avator.png" class="avator"></image>
             <view class="message">
               <view class="message-title">{{patients.userName}}</view>
                 <view class="message-content">
-                  {{patients.age}}岁
+                  {{patients.age?patients.age:''}}岁
                   {{gender[patients.gender]}}
                 </view>
               </view>
             </view>
-            <image src="../image/editor.png" class="editor" bindtap="editorPatient"></image>
+            <image src="../image/editor.png" class="editor" ></image>
           </view>
         </view>
 <button type="default" class="save-message" bindtap="addPatient">添加患者</button>

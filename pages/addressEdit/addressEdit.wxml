@@ -2,23 +2,26 @@
 <view class="address-wrap">
   <van-cell-group>
   <van-field
-    value="{{ username }}"
+     model:value="{{userName}}"
     label="姓名"
     placeholder="收货人姓名"
     bind:click-icon="onClickIcon"
+    required
   />
 
   <van-field
-    value="{{ password }}"
+    model:value="{{mobilePhone }}"
     label="电话"
     placeholder="收货人电话号"
-    border="{{ false }}"
+    type="number"
+    required
   />
   <view bindtap="showPopup">
-      <van-field  label="地区" value="{{address?address:'请选择收货地址'}}" is-link  readonly/>
+      <van-field  required label="地区" model:value="{{address?address:'请选择收货地址'}}" is-link  readonly/>
   </view>
   <van-popup show="{{ show }}" bind:close="onClose"  position="bottom">
       <van-area
+       value="110101"
     area-list="{{ areaList }}"
     columns-placeholder="{{ ['请选择', '请选择', '请选择'] }}"
     title="地区"
@@ -27,17 +30,18 @@
   </van-popup>
 
     <van-field
-    value="{{ username }}"
+   model:value="{{detail }}"
     label="详细地址"
+    required
     placeholder="收货人详细地址"
     bind:click-icon="onClickIcon"
   />
 
   <van-field
-    value="{{ password }}"
+    model:value="{{postalCode }}"
     label="邮政编码"
     placeholder="邮政编码"
-    border="{{ false }}"
+    type="number"
   />
 
   <view class="default">

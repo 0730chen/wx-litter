@@ -6,7 +6,7 @@
   <view class="address-container">
   
   <van-cell-group title="收货地址">
-    <van-cell wx:for="{{addressList}}" center title="{{item.userName}}" value="编辑" label="{{item.addressMessage}}" >
+    <van-cell wx:for="{{addressList}}" center title="{{item.userName}}" data-index="{{index}}"  value="编辑" label="{{item.addressMessage}}" bindtap="editAddress">
       <van-icon slot="right-icon" name="edit" class="custom-icon" />
     </van-cell>
   </van-cell-group>

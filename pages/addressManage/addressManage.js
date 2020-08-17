@@ -15,6 +15,15 @@ Page({
       url: '../../pages/addressEdit/addressEdit',
     })
   },
+  //编辑地址
+  editAddress(e){
+    console.log(e)
+    let index = e.currentTarget.dataset.index
+    let addressMessage = JSON.stringify(this.data.addressList[index])
+    wx.navigateTo({
+      url: `../../pages/addressEdit/addressEdit?address=${addressMessage}`,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -47,9 +56,25 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    console.log(this.data.newAddress)
+    if(this.data.newAddress ){
 
+      let newAddress = this.data.newAddress
+      let oldAddressList = this.data.addressList
+      let newAddressList = []
+      if(this.data.type==='add'){
+        newAddressList.push(...oldAddressList,newAddress)
+        console.log(newAddressList)
+        this.setData({
+          addressList:newAddressList
+        })
+      }else{
+        console.log('编辑内容')
+      }
+      // delete this.data.newAddress
+      // delete this.data.type
+    }
   },
-
   /**
    * 生命周期函数--监听页面隐藏
    */
