@@ -1,4 +1,5 @@
 // pages/treatmentBack/treatmentBack.js
+const  {bodyAction,treatmentList} = require('./options')
 Page({
 
   /**
@@ -6,6 +7,8 @@ Page({
    */
   data: {
     value: '',
+    bodyAction,
+    treatmentList,
   },
 
   /*
@@ -40,6 +43,33 @@ Page({
      title: `当前值：${garderType[event.detail]}`,
    });
  }
+ },
+ clickBody(e){
+   console.log(e.currentTarget.dataset.name)
+   let name = e.currentTarget.dataset.name
+   let newArray = this.data.bodyAction.map(e=>{
+    e.plain = !(e.name === name && e.plain === true);
+    return e
+   })
+   this.setData({
+     bodyAction:newArray
+   })
+ },
+ otherClick(e){
+   let {name,index} = e.currentTarget.dataset
+      let newArray = this.data.treatmentList.map((item,i)=>{
+        if(i===index){
+          console.log(item)
+          item.selection.forEach(tag=>{
+            tag.plain = !(tag.name ===name && tag.plain ===true)
+          })
+        }
+        return item
+      })
+      this.setData({
+        treatmentList:newArray
+      })
+
  },
   /**
    * 生命周期函数--监听页面加载

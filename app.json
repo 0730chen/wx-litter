@@ -16,7 +16,9 @@
     "pages/treatmentBack/treatmentBack",
     "pages/recordDetails/recordDetails",
     "pages/addressManage/addressManage",
-    "pages/addressEdit/addressEdit"
+    "pages/addressEdit/addressEdit",
+    "pages/serviceAgreement/serviceAgreement",
+    "pages/privacyPolicy/privacyPolicy"
   ],
   "usingComponents": {
     "van-button": "@vant/weapp/button/index"

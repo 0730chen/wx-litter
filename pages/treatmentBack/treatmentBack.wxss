@@ -49,6 +49,9 @@ button{
 .grade-title{
   width: 40%;
 }
+.grade-title-2{
+  width: 20%;
+}
 .treatment-title{
   width: 25%;
 }

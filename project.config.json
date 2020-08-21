@@ -13,7 +13,7 @@
 		"newFeature": false,
 		"coverView": true,
 		"nodeModules": true,
-		"autoAudits": false,
+		"autoAudits": true,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
 		"uglifyFileName": false,
@@ -31,7 +31,7 @@
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.12.0",
+	"libVersion": "2.12.1",
 	"appid": "wxb5a8c01d86388ee5",
 	"projectname": "learn-demo",
 	"debugOptions": {
@@ -41,6 +41,7 @@
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -74,8 +75,8 @@
 				},
 				{
 					"id": 1,
-					"name": "pages/home/home",
-					"pathName": "pages/home/home",
+					"name": "pages/privacyPolicy/privacyPolicy",
+					"pathName": "pages/privacyPolicy/privacyPolicy",
 					"query": "",
 					"scene": null
 				}

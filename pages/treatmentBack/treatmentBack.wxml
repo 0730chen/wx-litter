@@ -11,35 +11,24 @@
         <view class="grade">
           <view class="grade-title">级别：</view>
           <view class="grade-list">
-            <view>不适</view>
+            <!-- <view>不适</view>
             <view>一般</view>
             <view>好</view>
-            <view>非常好</view>
+            <view>非常好</view> -->
+            <van-tag plain="{{item.plain}}" type="primary" wx:for="{{bodyAction}}" wx:key="index"  size="large" bindtap="clickBody" data-name="{{item.name}}">{{item.name}}</van-tag>
           </view>
-        </view>
-        <view class="slider">
-          <view class="treatment-title">全身舒适度</view>
-          <van-slider value="0" step="10" max="40" bind:change="bodyChnage"/>
         </view>
       </view>
     </view>
     <view class="other">
       <view class="title">
         <view class="question-title">请选择反馈</view>
-        <view class="grade">
-          <view class="grade-title">级别：</view>
+        <view class="grade" wx:for="{{treatmentList}}" wx:key="index">
+          <view class="grade-title-2">{{item.des}}</view>
           <view class="grade-list">
-            <view>加重</view>
-            <view>无变化</view>
-            <view>改善</view>
-            <view class="overflow-text">明显改善</view>
-            <view>痊愈</view>
+           <van-tag plain="{{item.plain}}"  type="primary" :class="tag.name==='明显改善'?'overflow-text':'222'" size="large" wx:for="{{item.selection}}" wx-index="tag" wx:for-index="tag" wx:key="tag" bindtap="otherClick" data-name="{{item.name}}" data-index="{{index}}">{{item.name}}</van-tag>
           </view>
         </view>
-      </view>
-      <view class="slider" wx:for="{{['胃痛','全身出汗','全身皮肤脱屑','头晕']}}">
-          <view class="treatment-title">{{item}}</view>
-          <van-slider value="0" step="10" max="50" bind:change="otherChange"/>
       </view>
     </view>
     <view>
@@ -52,7 +41,7 @@
     </view>
   </view>
   <view class="submit">
-    <button type="primary" size="large">提交</button>
+   <van-button type="primary" size="large">提交</van-button>
   </view>
   
   </van-tab>

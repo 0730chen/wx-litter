@@ -1,0 +1,22 @@
+/* pages/privacyPolicy/privacyPolicy.wxss */
+.title{
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+.privacy-wrap{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.list-content{
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+.list-item{
+  padding: 8px 0;
+}
+p{
+  padding: 4px 0;
+}

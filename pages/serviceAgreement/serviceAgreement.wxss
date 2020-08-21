@@ -1,0 +1,26 @@
+/* pages/serviceAgreement/serviceAgreement.wxss */
+.service{
+  padding: 16px;
+}
+.service-title{
+  text-align: center;
+  font-size: 18px ;
+  font-weight: 700;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+}
+.list-item{
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+}
+
+.list-item-content{
+  padding: 8px 0;
+}
+.violation{
+  display: flex;
+  flex-direction: column;
+}
