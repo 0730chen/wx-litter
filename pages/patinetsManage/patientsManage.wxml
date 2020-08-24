@@ -14,7 +14,6 @@
               </view>
             </view>
           </view>
-          <!-- <image src="../image/editor.png" class="editor"  bindtap="editorPatient" ></image> -->
           </van-radio>
         </view>
     </van-radio-group>
@@ -33,5 +32,7 @@
             <image src="../image/editor.png" class="editor" ></image>
           </view>
         </view>
-<button type="default" class="save-message" bindtap="addPatient">添加患者</button>
+      <view class="save-message">
+        <van-button type="primary" class="save-message" bindtap="addPatient">添加患者</van-button>
+      </view>
 </view>

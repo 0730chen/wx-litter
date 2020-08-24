@@ -51,9 +51,8 @@ Page({
    * 
   */
  defaultChange(e){
-   console.log(e)
    this.setData({
-     default:e.detail.value
+     default:e.detail
    })
  },
  /**
@@ -83,7 +82,7 @@ Page({
  },
  /**
   * 
-  * @param {户主关系改变} e 
+  * @param {户主关系改变}
   */
  bindRelation(e){
   let index = e.detail.value

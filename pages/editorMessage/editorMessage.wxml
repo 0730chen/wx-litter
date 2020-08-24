@@ -31,6 +31,6 @@
 <view class="phone">
 电话<text class="phone-number">{{phone}}</text>
 </view>
-<button type="primary" class="save-message" bindtap="saveMessage">提交</button>
+  <van-button type="primary" class="save-message" bindtap="saveMessage"size="large">提交</van-button>
 </view>
 </view>

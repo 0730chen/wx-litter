@@ -37,6 +37,6 @@
         </view>
   </view>
     <view class="submit">
-        <button type="primary">提交</button>
+    <van-button type="primary" size="large">提交预诊</van-button>
     </view>
 </view>

@@ -26,7 +26,7 @@
   background: white;
 }
 .selected{
-  color: rgb(19, 77, 155);
+  color: rgb(17, 225, 147);
   font-size: 18px;
 }
 .patient-list{

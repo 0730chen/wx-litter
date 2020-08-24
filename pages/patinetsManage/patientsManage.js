@@ -75,7 +75,7 @@ Page({
     let key = options.key
     if(key==='my'){
       this.setData({
-        title:'患者管理'
+        title:'就诊人管理'
       })
     }else{
       this.setData({

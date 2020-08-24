@@ -15,17 +15,21 @@
 }
 .detail-title-name{
   padding-left: 20px;
+  display: flex;
+  align-items: center;
 }
 .good-at{
   padding: 8px 16px;
+  background-color: rgb(249, 249, 249);
 }
-user-name{
-  font-size: 18px;
+.user-name{
+  color: black;
+  font-size: 16px;
   font-weight: 700;
 }
 .position{
-  padding-left: 16px;
-  color: darkmagenta;
+  padding:0 16px;
+  color: rgb(17, 225, 147);
 }
 .op{
   width: 100%;
@@ -38,7 +42,7 @@ user-name{
   text-align: center;
 }
 .diagnosis{
-  color: rgb(19, 77, 155);
+  color: rgb(17, 225, 147);
   border-left: 1px solid #CCC;
   width: 50%;
   text-align: center;

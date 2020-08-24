@@ -9,9 +9,6 @@
 .title{
   padding: 16px;
 }
-.address-container{
-  flex: 1;
-}
 .operat{
   margin: 16px auto;
 }

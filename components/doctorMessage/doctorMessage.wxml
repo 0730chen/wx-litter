@@ -11,12 +11,14 @@
       <view class="detail-message">
         <view class="detail-title">
           <view class="detail-title-name">
-             <text class="user-name">{{name}}</text><text class="position">副主任</text>
+             <text class="user-name">{{name}}</text>
+             <text class="position">副主任</text>
+             <van-icon name="star" color="rgb(255,210,30)" size="20px" />
           </view>
           <van-cell title="萧山天人大厦" icon="location-o" border="{{false}}"/>
         </view>
       </view>
-      <van-icon name="phone" color="#CCC" size='20px'/>
+      <van-icon name="phone" color="rgb(17, 225, 147)"/>
     </view>
   <view wx:if="{{status===1}}">
     <view class="good-at">擅长:中医</view>

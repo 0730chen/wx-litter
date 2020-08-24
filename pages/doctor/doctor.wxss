@@ -38,6 +38,6 @@ van-search{
   position: relative;
 }
 .nearby{
-  color: rgb(19, 77, 155);
+  color:rgb(17, 225, 147);
   padding-right: 16px;
 }

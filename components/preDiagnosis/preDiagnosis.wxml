@@ -21,7 +21,9 @@
 <view class="patient-readme">
 <view class="readme-title">
 <view class="readme-title-icon">
+
 <van-icon name="contact" color="green"/>
+
 <text class="user-name"></text>
 <text class="age">18岁</text>
 <text class="gender">男</text>

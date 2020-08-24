@@ -46,16 +46,16 @@
 
   <view class="default">
     <van-cell center title="设置为默认地址">
-      <van-switch checked="{{ checked }}" bind:change="onChange" />
+      <van-switch  active-color="#07c160"  checked="{{ checked }}" bind:change="onChange" />
       </van-cell>
     </view>
 
     <view class="operating">
     <view class="save">
-      <van-button class="save" type="info" block round bind:click="saveAddress">保存</van-button>
+      <van-button class="save"  block bind:click="saveAddress" type="primary">保存</van-button>
     </view>
       <view  class="delete">
-        <van-button  class="delete" type="warning" block round  bind:click="deleteAddress">删除</van-button>
+        <van-button  class="delete" block  bind:click="deleteAddress"  type="danger">删除</van-button>
       </view> 
     </view>
 </van-cell-group>

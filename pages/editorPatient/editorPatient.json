@@ -1,4 +1,8 @@
 {
   "navigationBarTitleText": "患者信息",
-  "usingComponents": {}
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-field": "@vant/weapp/field/index"
+  }
 }

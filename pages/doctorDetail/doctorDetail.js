@@ -71,6 +71,7 @@ Page({
   },
   //预约表单
   reservation(){
+    console.log(111)
     wx.navigateTo({
       url: '../../pages/preDiagnosis/preDiagnosis',
     })

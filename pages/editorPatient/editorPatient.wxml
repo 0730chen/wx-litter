@@ -19,6 +19,7 @@
 </view>
 </view>
 <view class="patient-name">
+
 姓名<input placeholder="请输入" class="input-name" model:value="{{userName}}"></input>
 </view>
 <view class="patient-gender">
@@ -36,16 +37,16 @@
   </picker>
 </view>
 <view class="patient-physique">
-<view class="height">
-身高（cm）<input placeholder="请输入" class="height-input" type="number" model:value="{{height}}"></input>
-</view>
-<view class="height">
-体重（kg）<input placeholder="请输入" class="weight-input" type="number" model:value="{{weight}}"></input>
-</view>
+  <view class="height">
+  身高（cm）<input placeholder="请输入" class="height-input" type="number" model:value="{{height}}"></input>
+  </view>
+  <view class="height">
+      体重（kg）<input placeholder="请输入" class="weight-input" type="number" model:value="{{weight}}"></input>
+  </view>
 </view>
 <view class="patient-default">
-设置为默认就诊人<switch checked="{{default}}" bindchange="defaultChange"></switch>
+  设置为默认就诊人<van-switch   active-color="#07c160" checked="{{ default}}" bind:change="defaultChange" />
+  </view>
 </view>
-<button type="primary" class="save-message" bindtap="saveMessage">保存</button>
-</view>
+ <van-button type="primary" class="save-message" bindtap="saveMessage" size="large">保存</van-button>
 </view>

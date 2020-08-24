@@ -75,8 +75,8 @@
 				},
 				{
 					"id": 1,
-					"name": "pages/privacyPolicy/privacyPolicy",
-					"pathName": "pages/privacyPolicy/privacyPolicy",
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
 					"query": "",
 					"scene": null
 				}
