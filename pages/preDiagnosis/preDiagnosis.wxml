@@ -8,10 +8,11 @@
             <van-field
             type="textarea"
             model:value="{{ value }}"
-            placeholder="请输入症状描述"
+            placeholder="请简要描述不适症状和疾病，并建议填写右下问诊单"
             show-word-limit
             input-class="input-class"
             maxlength="150"
+             autosize
             bind:change="onChange"
                 />
         </view>
@@ -37,6 +38,6 @@
         </view>
   </view>
     <view class="submit">
-    <van-button type="primary" size="large">提交预诊</van-button>
+    <van-button type="primary" size="large">提交</van-button>
     </view>
 </view>
